@@ -1,32 +1,45 @@
-var builder = WebApplication.CreateBuilder(args);
+using Serilog;
+using Scalar.AspNetCore; 
 
-// Add services to the container.
+Log.Logger = new LoggerConfiguration()
+    .MinimumLevel.Debug()
+    .WriteTo.Console()
+    .WriteTo.File("logs/bot_log.txt", rollingInterval: RollingInterval.Day)
+    .CreateLogger();
 
-var app = builder.Build();
-
-// Configure the HTTP request pipeline.
-
-var summaries = new[]
+try
 {
-    "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
-};
+    var builder = WebApplication.CreateBuilder(args);
+    builder.Host.UseSerilog();
 
-app.MapGet("/weatherforecast", () =>
+    builder.Services.AddOpenApi();
+
+    builder.Services.AddControllers();
+
+    var app = builder.Build();
+
+    if (app.Environment.IsDevelopment())
+    {
+        app.MapOpenApi();
+
+        app.MapScalarApiReference(options =>
+        {
+            options.WithTitle("AI Prompt Generator API")
+                   .WithDefaultHttpClient(ScalarTarget.CSharp, ScalarClient.HttpClient);
+        });
+    }
+
+    app.UseHttpsRedirection();
+    app.MapControllers();
+
+    Log.Information("Bot v? API (Scalar il?) aktivdir...");
+    app.Run();
+}
+catch (Exception ex)
 {
-    var forecast = Enumerable.Range(1, 5).Select(index =>
-        new WeatherForecast
-        (
-            DateOnly.FromDateTime(DateTime.Now.AddDays(index)),
-            Random.Shared.Next(-20, 55),
-            summaries[Random.Shared.Next(summaries.Length)]
-        ))
-        .ToArray();
-    return forecast;
-});
-
-app.Run();
-
-internal record WeatherForecast(DateOnly Date, int TemperatureC, string? Summary)
+    Log.Fatal(ex, "T?tbiq dayand?!");
+}
+finally
 {
-    public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
+    Log.CloseAndFlush();
 }
