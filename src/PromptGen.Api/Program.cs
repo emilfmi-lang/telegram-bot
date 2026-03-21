@@ -13,7 +13,7 @@ try
 {
     var builder = WebApplication.CreateBuilder(args);
     builder.Host.UseSerilog();
-
+    //Database 
     AppContext.SetSwitch("Npgsql.EnableLegacyTimestampBehavior", true);
 
     builder.Services.AddDbContext<AppDbContext>(options =>
