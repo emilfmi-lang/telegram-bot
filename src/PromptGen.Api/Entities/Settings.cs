@@ -4,4 +4,5 @@ namespace PromptGen.Api.Entities;
 
 public class Settings : BaseEntity
 {
+    public string Name { get; set; }
 }
