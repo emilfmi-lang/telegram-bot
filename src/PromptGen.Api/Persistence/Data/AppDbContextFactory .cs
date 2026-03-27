@@ -5,6 +5,7 @@ using Microsoft.EntityFrameworkCore.Design;
 
 public class AppDbContextFactory : IDesignTimeDbContextFactory<AppDbContext>
 {
+    //database migration时需要这个工厂类来创建DbContext实例
     public AppDbContext CreateDbContext(string[] args)
     {
         var optionsBuilder = new DbContextOptionsBuilder<AppDbContext>();
