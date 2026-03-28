@@ -1,7 +1,9 @@
-using Serilog;
-using Scalar.AspNetCore;
 using Microsoft.EntityFrameworkCore;
+using PromptGen.Api.Concretes.Services;
 using PromptGen.Api.Persistence.Data;
+using Scalar.AspNetCore;
+using Serilog;
+using Telegram.Bot;
 
 Log.Logger = new LoggerConfiguration()
     .MinimumLevel.Debug()
@@ -18,7 +20,20 @@ try
 
     builder.Services.AddDbContext<AppDbContext>(options =>
         options.UseNpgsql(builder.Configuration.GetConnectionString("Postgres")));
-    builder.Services.AddOpenApi(); 
+    builder.Services.AddOpenApi();
+    builder.Services.AddSingleton<ITelegramBotClient>(sp =>
+    {
+        var configuration = sp.GetRequiredService<IConfiguration>();
+        var token = configuration["BotConfiguration:BotToken"];
+
+        if (string.IsNullOrEmpty(token))
+        {
+            throw new Exception("Bot Token appsettings.json fayl?nda tap?lmad?!");
+        }
+
+        return new TelegramBotClient(token);
+    });
+    builder.Services.AddHostedService<BotBackgroundService>();
 
     builder.Services.AddControllers();
 
@@ -38,12 +53,12 @@ try
     app.UseHttpsRedirection();
     app.MapControllers();
 
-    Log.Information("Bot v? API (Scalar il?) aktivdir...");
+    Log.Information("Bot ve API (Scalar ile) aktivdir...");
     app.Run();
 }
 catch (Exception ex)
 {
-    Log.Fatal(ex, "T?tbiq dayand?!");
+    Log.Fatal(ex, "Tetbiq dayandi!");
 }
 finally
 {
