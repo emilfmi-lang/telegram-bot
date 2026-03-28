@@ -34,6 +34,7 @@ try
         return new TelegramBotClient(token);
     });
     builder.Services.AddHostedService<BotBackgroundService>();
+    builder.Services.AddScoped<GeminiService>();
 
     builder.Services.AddControllers();
 

@@ -36,38 +36,59 @@ public class BotBackgroundService(ITelegramBotClient botClient, IServiceProvider
         var chatId = message.Chat.Id;
         var firstName = message.From?.FirstName ?? "Naməlum";
 
-        Console.WriteLine($"{firstName} mesaj yazdı: {messageText}");
+        Console.WriteLine($"📩 {firstName} mesaj yazdı: {messageText}");
 
         using (var scope = _serviceProvider.CreateScope())
         {
             var dbContext = scope.ServiceProvider.GetRequiredService<AppDbContext>();
+            var geminiService = scope.ServiceProvider.GetRequiredService<GeminiService>();
 
-            var userExists = dbContext.Users.Any(u => u.TelegramId == chatId);
+            var user = dbContext.Users.FirstOrDefault(u => u.TelegramId == chatId);
 
-            if (!userExists)
+            if (user == null)
             {
-                var newUser = new AppUser
+                user = new AppUser
                 {
                     TelegramId = chatId,
                     FirstName = firstName,
                     CreatedAt = DateTime.UtcNow
                 };
-                dbContext.Users.Add(newUser);
+                dbContext.Users.Add(user);
                 await dbContext.SaveChangesAsync(cancellationToken);
 
                 await botClient.SendMessage(
                     chatId: chatId,
-                    text: $"Salam {firstName}, sən artıq bazaya qeyd olundun!",
+                    text: $"Salam {firstName}, xoş gəlmisən! Sən artıq bazaya qeyd olundun. İndi mənə bir mövzu yaz, sənin üçün AI Prompt hazırlayım!",
                     cancellationToken: cancellationToken
-                    );
+                );
+                return;
             }
-            else
+
+            await botClient.SendMessage(
+                chatId: chatId,
+                text: "🤖 Sənin üçün mükəmməl prompt hazırlayıram, bir az gözlə...",
+                cancellationToken: cancellationToken
+            );
+
+            try
             {
+                var aiResult = await geminiService.GeneratePromptAsync(messageText);
+
                 await botClient.SendMessage(
-                                    chatId: chatId,
-                                    text: "Səni yenidən görmək xoşdur!",
-                                    cancellationToken: cancellationToken
-                                );
+                    chatId: chatId,
+                    text: $"✨ **Sənin üçün hazırladığım Prompt:**\n\n`{aiResult}`",
+                    parseMode: Telegram.Bot.Types.Enums.ParseMode.Markdown, 
+                    cancellationToken: cancellationToken
+                );
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"AI Xətası: {ex.Message}");
+                await botClient.SendMessage(
+                    chatId: chatId,
+                    text: "Bağışla, AI ilə əlaqə zamanı bir xəta baş verdi. Bir az sonra yenidən yoxla.",
+                    cancellationToken: cancellationToken
+                );
             }
         }
     }
