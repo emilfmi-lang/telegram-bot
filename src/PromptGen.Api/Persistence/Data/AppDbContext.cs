@@ -7,7 +7,6 @@ namespace PromptGen.Api.Persistence.Data;
 
 public class AppDbContext : DbContext
 {
-    //Database contexti konfiqurasiya etmək üçün konstruktor
     public AppDbContext(DbContextOptions<AppDbContext> options) : base(options){}
 
     public DbSet<AppUser> Users { get; set; }

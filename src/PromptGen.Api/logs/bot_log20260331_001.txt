@@ -833,3 +833,412 @@ LIMIT 1
 2026-03-31 18:16:45.193 +04:00 [DBG] 'AppDbContext' disposed.
 2026-03-31 18:16:45.195 +04:00 [DBG] Disposing connection to database 'PromptGenDb' on server 'tcp://127.0.0.1:5432'.
 2026-03-31 18:16:45.197 +04:00 [DBG] Disposed connection to database 'PromptGenDb' on server 'tcp://127.0.0.1:5432' (2ms).
+2026-03-31 18:46:12.010 +04:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2026-03-31 18:46:12.072 +04:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2026-03-31 18:46:12.074 +04:00 [INF] Bot ve API (Scalar ile) aktivdir...
+2026-03-31 18:46:12.077 +04:00 [DBG] Hosting starting
+2026-03-31 18:46:12.090 +04:00 [DBG] Middleware loaded
+2026-03-31 18:46:12.092 +04:00 [DBG] Middleware loaded. Script /_framework/aspnetcore-browser-refresh.js (16511 B).
+2026-03-31 18:46:12.097 +04:00 [DBG] Middleware loaded. Script /_framework/blazor-hotreload.js (799 B).
+2026-03-31 18:46:12.120 +04:00 [DBG] Middleware configuration started with options: {AllowedHosts = *, AllowEmptyHosts = True, IncludeFailureMessage = True}
+2026-03-31 18:46:12.123 +04:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2026-03-31 18:46:12.125 +04:00 [DBG] Middleware loaded: DOTNET_MODIFIABLE_ASSEMBLIES=debug, __ASPNETCORE_BROWSER_TOOLS=true
+2026-03-31 18:46:12.138 +04:00 [INF] Now listening on: http://localhost:5050
+2026-03-31 18:46:12.139 +04:00 [DBG] Loaded hosting startup assembly PromptGen.Api
+2026-03-31 18:46:12.141 +04:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2026-03-31 18:46:12.142 +04:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.ApiEndpointDiscovery
+2026-03-31 18:46:12.142 +04:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2026-03-31 18:46:12.148 +04:00 [DBG] Executing API description provider 'EndpointMetadataApiDescriptionProvider' from assembly Microsoft.AspNetCore.Mvc.ApiExplorer v10.0.0.0.
+2026-03-31 18:46:12.150 +04:00 [DBG] Executing API description provider 'DefaultApiDescriptionProvider' from assembly Microsoft.AspNetCore.Mvc.ApiExplorer v10.0.0.0.
+2026-03-31 18:46:12.167 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-03-31 18:46:12.168 +04:00 [INF] Hosting environment: Development
+2026-03-31 18:46:12.169 +04:00 [INF] Content root path: C:\Users\User\OneDrive\Desktop\TelegramBot\src\PromptGen.Api
+2026-03-31 18:46:12.170 +04:00 [DBG] Hosting started
+2026-03-31 18:46:12.588 +04:00 [DBG] Connection id "0HNKF6H0H1LEJ" accepted.
+2026-03-31 18:46:12.588 +04:00 [DBG] Connection id "0HNKF6H0H1LEI" accepted.
+2026-03-31 18:46:12.590 +04:00 [DBG] Connection id "0HNKF6H0H1LEJ" started.
+2026-03-31 18:46:12.590 +04:00 [DBG] Connection id "0HNKF6H0H1LEI" started.
+2026-03-31 18:46:12.608 +04:00 [DBG] Connection id "0HNKF6H0H1LEJ" received FIN.
+2026-03-31 18:46:12.608 +04:00 [DBG] Connection id "0HNKF6H0H1LEI" received FIN.
+2026-03-31 18:46:12.611 +04:00 [DBG] Connection id "0HNKF6H0H1LEI" sending FIN because: "The Socket transport's send loop completed gracefully."
+2026-03-31 18:46:12.611 +04:00 [DBG] Connection id "0HNKF6H0H1LEJ" sending FIN because: "The Socket transport's send loop completed gracefully."
+2026-03-31 18:46:12.614 +04:00 [DBG] Connection id "0HNKF6H0H1LEI" disconnecting.
+2026-03-31 18:46:12.615 +04:00 [DBG] Connection id "0HNKF6H0H1LEJ" disconnecting.
+2026-03-31 18:46:12.616 +04:00 [DBG] Connection id "0HNKF6H0H1LEJ" stopped.
+2026-03-31 18:46:12.616 +04:00 [DBG] Connection id "0HNKF6H0H1LEI" stopped.
+2026-03-31 18:46:12.725 +04:00 [DBG] Connection id "0HNKF6H0H1LEK" accepted.
+2026-03-31 18:46:12.727 +04:00 [DBG] Connection id "0HNKF6H0H1LEK" started.
+2026-03-31 18:46:12.772 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5050/scalar - null null
+2026-03-31 18:46:12.828 +04:00 [DBG] 1 candidate(s) found for the request path '/scalar'
+2026-03-31 18:46:12.832 +04:00 [DBG] Endpoint 'HTTP: GET /scalar/{documentName?}' with route pattern '/scalar/{documentName?}' is valid for the request path '/scalar'
+2026-03-31 18:46:12.836 +04:00 [DBG] Request matched endpoint 'HTTP: GET /scalar/{documentName?}'
+2026-03-31 18:46:12.849 +04:00 [WRN] Failed to determine the https port for redirect.
+2026-03-31 18:46:12.854 +04:00 [INF] Executing endpoint 'HTTP: GET /scalar/{documentName?}'
+2026-03-31 18:46:12.861 +04:00 [INF] Executing RedirectResult, redirecting to scalar/.
+2026-03-31 18:46:12.865 +04:00 [INF] Executed endpoint 'HTTP: GET /scalar/{documentName?}'
+2026-03-31 18:46:12.869 +04:00 [DBG] Connection id "0HNKF6H0H1LEL" accepted.
+2026-03-31 18:46:12.873 +04:00 [DBG] Connection id "0HNKF6H0H1LEK" completed keep alive response.
+2026-03-31 18:46:12.876 +04:00 [DBG] Connection id "0HNKF6H0H1LEL" started.
+2026-03-31 18:46:12.880 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5050/scalar - 302 null null 109.7756ms
+2026-03-31 18:46:12.905 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5050/scalar/ - null null
+2026-03-31 18:46:12.918 +04:00 [DBG] 1 candidate(s) found for the request path '/scalar/'
+2026-03-31 18:46:12.921 +04:00 [DBG] Endpoint 'HTTP: GET /scalar/{documentName?}' with route pattern '/scalar/{documentName?}' is valid for the request path '/scalar/'
+2026-03-31 18:46:12.923 +04:00 [DBG] Request matched endpoint 'HTTP: GET /scalar/{documentName?}'
+2026-03-31 18:46:12.926 +04:00 [INF] Executing endpoint 'HTTP: GET /scalar/{documentName?}'
+2026-03-31 18:46:13.085 +04:00 [INF] Write content with HTTP Response ContentType of text/html
+2026-03-31 18:46:13.089 +04:00 [DBG] Response markup is scheduled to include Browser Link script injection.
+2026-03-31 18:46:13.092 +04:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2026-03-31 18:46:13.101 +04:00 [INF] Executed endpoint 'HTTP: GET /scalar/{documentName?}'
+2026-03-31 18:46:13.103 +04:00 [DBG] Response markup was updated to include Browser Link script injection.
+2026-03-31 18:46:13.105 +04:00 [DBG] Connection id "0HNKF6H0H1LEM" accepted.
+2026-03-31 18:46:13.105 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5050/scalar/scalar.js - null null
+2026-03-31 18:46:13.106 +04:00 [DBG] Response markup was updated to include browser refresh script injection.
+2026-03-31 18:46:13.107 +04:00 [DBG] Connection id "0HNKF6H0H1LEM" started.
+2026-03-31 18:46:13.107 +04:00 [DBG] Connection id "0HNKF6H0H1LEN" accepted.
+2026-03-31 18:46:13.111 +04:00 [DBG] 2 candidate(s) found for the request path '/scalar/scalar.js'
+2026-03-31 18:46:13.112 +04:00 [DBG] Connection id "0HNKF6H0H1LEK" completed keep alive response.
+2026-03-31 18:46:13.114 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5050/_framework/aspnetcore-browser-refresh.js - null null
+2026-03-31 18:46:13.114 +04:00 [DBG] Connection id "0HNKF6H0H1LEN" started.
+2026-03-31 18:46:13.115 +04:00 [DBG] Connection id "0HNKF6H0H1LEO" accepted.
+2026-03-31 18:46:13.116 +04:00 [DBG] Endpoint 'HTTP: GET /scalar/scalar.js' with route pattern '/scalar/scalar.js' is valid for the request path '/scalar/scalar.js'
+2026-03-31 18:46:13.117 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5050/scalar/ - 200 null text/html 212.4059ms
+2026-03-31 18:46:13.123 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5050/scalar/scalar.aspnetcore.js - null null
+2026-03-31 18:46:13.123 +04:00 [DBG] Script injected: /_framework/aspnetcore-browser-refresh.js
+2026-03-31 18:46:13.124 +04:00 [DBG] Connection id "0HNKF6H0H1LEO" started.
+2026-03-31 18:46:13.126 +04:00 [DBG] Endpoint 'HTTP: GET /scalar/{documentName?}' with route pattern '/scalar/{documentName?}' is valid for the request path '/scalar/scalar.js'
+2026-03-31 18:46:13.135 +04:00 [DBG] 2 candidate(s) found for the request path '/scalar/scalar.aspnetcore.js'
+2026-03-31 18:46:13.135 +04:00 [DBG] Connection id "0HNKF6H0H1LEM" completed keep alive response.
+2026-03-31 18:46:13.137 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5050/_vs/browserLink - null null
+2026-03-31 18:46:13.138 +04:00 [DBG] Request matched endpoint 'HTTP: GET /scalar/scalar.js'
+2026-03-31 18:46:13.140 +04:00 [DBG] Endpoint 'HTTP: GET /scalar/scalar.aspnetcore.js' with route pattern '/scalar/scalar.aspnetcore.js' is valid for the request path '/scalar/scalar.aspnetcore.js'
+2026-03-31 18:46:13.141 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5050/_framework/aspnetcore-browser-refresh.js - 200 16511 application/javascript; charset=utf-8 27.5873ms
+2026-03-31 18:46:13.146 +04:00 [INF] Executing endpoint 'HTTP: GET /scalar/scalar.js'
+2026-03-31 18:46:13.147 +04:00 [DBG] Endpoint 'HTTP: GET /scalar/{documentName?}' with route pattern '/scalar/{documentName?}' is valid for the request path '/scalar/scalar.aspnetcore.js'
+2026-03-31 18:46:13.154 +04:00 [DBG] Request matched endpoint 'HTTP: GET /scalar/scalar.aspnetcore.js'
+2026-03-31 18:46:13.156 +04:00 [INF] Executing endpoint 'HTTP: GET /scalar/scalar.aspnetcore.js'
+2026-03-31 18:46:13.157 +04:00 [INF] Sending file with download name ''.
+2026-03-31 18:46:13.158 +04:00 [INF] Sending file with download name ''.
+2026-03-31 18:46:13.160 +04:00 [DBG] The file result has not been enabled for processing range requests. To enable it, set the EnableRangeProcessing property on the result to 'true'.
+2026-03-31 18:46:13.160 +04:00 [DBG] The file result has not been enabled for processing range requests. To enable it, set the EnableRangeProcessing property on the result to 'true'.
+2026-03-31 18:46:13.162 +04:00 [INF] Executed endpoint 'HTTP: GET /scalar/scalar.aspnetcore.js'
+2026-03-31 18:46:13.165 +04:00 [DBG] Connection id "0HNKF6H0H1LEN" completed keep alive response.
+2026-03-31 18:46:13.167 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5050/scalar/scalar.aspnetcore.js - 200 1111 text/javascript 43.7721ms
+2026-03-31 18:46:13.178 +04:00 [DBG] Connection id "0HNKF6H0H1LEO" completed keep alive response.
+2026-03-31 18:46:13.180 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5050/_vs/browserLink - 200 null text/javascript; charset=UTF-8 43.1766ms
+2026-03-31 18:46:13.184 +04:00 [INF] Executed endpoint 'HTTP: GET /scalar/scalar.js'
+2026-03-31 18:46:13.187 +04:00 [DBG] Connection id "0HNKF6H0H1LEL" completed keep alive response.
+2026-03-31 18:46:13.188 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5050/scalar/scalar.js - 200 1128805 text/javascript 82.5609ms
+2026-03-31 18:46:13.602 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5050/openapi/v1.json - null null
+2026-03-31 18:46:13.605 +04:00 [DBG] 1 candidate(s) found for the request path '/openapi/v1.json'
+2026-03-31 18:46:13.607 +04:00 [DBG] Endpoint 'HTTP: GET /openapi/{documentName}.json' with route pattern '/openapi/{documentName}.json' is valid for the request path '/openapi/v1.json'
+2026-03-31 18:46:13.609 +04:00 [DBG] Request matched endpoint 'HTTP: GET /openapi/{documentName}.json'
+2026-03-31 18:46:13.610 +04:00 [INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+2026-03-31 18:46:13.618 +04:00 [INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+2026-03-31 18:46:13.620 +04:00 [DBG] Connection id "0HNKF6H0H1LEL" completed keep alive response.
+2026-03-31 18:46:13.621 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5050/openapi/v1.json - 200 null application/json;charset=utf-8 19.2249ms
+2026-03-31 18:46:24.376 +04:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2026-03-31 18:46:25.380 +04:00 [DBG] Entity Framework Core 10.0.5 initialized 'AppDbContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:10.0.1+2679a9d768d14f34d077e037311f80acb6f6b3b4' with options: None
+2026-03-31 18:46:25.437 +04:00 [DBG] Compiling query expression: 
+'DbSet<AppUser>()
+    .FirstOrDefault(u => u.TelegramId == @chatId)'
+2026-03-31 18:46:25.886 +04:00 [DBG] Generated query execution expression: 
+'queryContext => SingleQueryingEnumerable.Create<AppUser>(
+    relationalQueryContext: (RelationalQueryContext)queryContext, 
+    relationalCommandResolver: parameters => [LIFTABLE Constant: RelationalCommandCache.QueryExpression(
+        Projection Mapping:
+            EmptyProjectionMember -> Dictionary<IPropertyBase, int> { [Property: AppUser.Id (Guid) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: AppUser.CreatedAt (DateTime) Required, 1], [Property: AppUser.DailyRequestCount (int) Required, 2], [Property: AppUser.FirstName (string) MaxLength(150), 3], [Property: AppUser.IsPremium (bool) Required, 4], [Property: AppUser.LastName (string) MaxLength(150), 5], [Property: AppUser.LastRequestDate (DateTime) Required, 6], [Property: AppUser.TelegramId (long) Required Index, 7], [Property: AppUser.UpdatedAt (DateTime) Required, 8], [Property: AppUser.UserName (string) MaxLength(100), 9] }
+        SELECT TOP(1) u.Id, u.CreatedAt, u.DailyRequestCount, u.FirstName, u.IsPremium, u.LastName, u.LastRequestDate, u.TelegramId, u.UpdatedAt, u.UserName
+        FROM Users AS u
+        WHERE u.TelegramId == @chatId) | Resolver: c => new RelationalCommandCache(
+        c.Dependencies.MemoryCache, 
+        c.RelationalDependencies.QuerySqlGeneratorFactory, 
+        c.RelationalDependencies.RelationalParameterBasedSqlProcessorFactory, 
+        Projection Mapping:
+            EmptyProjectionMember -> Dictionary<IPropertyBase, int> { [Property: AppUser.Id (Guid) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: AppUser.CreatedAt (DateTime) Required, 1], [Property: AppUser.DailyRequestCount (int) Required, 2], [Property: AppUser.FirstName (string) MaxLength(150), 3], [Property: AppUser.IsPremium (bool) Required, 4], [Property: AppUser.LastName (string) MaxLength(150), 5], [Property: AppUser.LastRequestDate (DateTime) Required, 6], [Property: AppUser.TelegramId (long) Required Index, 7], [Property: AppUser.UpdatedAt (DateTime) Required, 8], [Property: AppUser.UserName (string) MaxLength(100), 9] }
+        SELECT TOP(1) u.Id, u.CreatedAt, u.DailyRequestCount, u.FirstName, u.IsPremium, u.LastName, u.LastRequestDate, u.TelegramId, u.UpdatedAt, u.UserName
+        FROM Users AS u
+        WHERE u.TelegramId == @chatId, 
+        False, 
+        Parameter
+    )].GetRelationalCommandTemplate(parameters), 
+    readerColumns: null, 
+    shaper: (queryContext, dataReader, resultContext, resultCoordinator) => 
+    {
+        AppUser entity;
+        entity = 
+        {
+            MaterializationContext materializationContext1;
+            IEntityType entityType1;
+            AppUser instance1;
+            InternalEntityEntry entry1;
+            bool hasNullKey1;
+            materializationContext1 = new MaterializationContext(
+                [LIFTABLE Constant: ValueBuffer | Resolver: _ => (object)ValueBuffer.Empty], 
+                queryContext.Context
+            );
+            instance1 = default(AppUser);
+            entry1 = queryContext.TryGetEntry(
+                key: [LIFTABLE Constant: Key: AppUser.Id PK | Resolver: c => c.Dependencies.Model.FindEntityType("PromptGen.Api.Entities.Identity.AppUser").FindPrimaryKey()], 
+                keyValues: new object[]{ (object)dataReader.GetGuid(0) }, 
+                throwOnNullKey: True, 
+                hasNullKey: hasNullKey1);
+            !(hasNullKey1) ? entry1 != default(InternalEntityEntry) ? 
+            {
+                entityType1 = entry1.EntityType;
+                return instance1 = (AppUser)entry1.Entity;
+            } : 
+            {
+                ISnapshot shadowSnapshot1;
+                shadowSnapshot1 = [LIFTABLE Constant: Snapshot | Resolver: _ => Snapshot.Empty];
+                entityType1 = [LIFTABLE Constant: EntityType: AppUser | Resolver: namelessParameter{0} => namelessParameter{0}.Dependencies.Model.FindEntityType("PromptGen.Api.Entities.Identity.AppUser")];
+                instance1 = switch (entityType1)
+                {
+                    case [LIFTABLE Constant: EntityType: AppUser | Resolver: namelessParameter{1} => namelessParameter{1}.Dependencies.Model.FindEntityType("PromptGen.Api.Entities.Identity.AppUser")]: 
+                        {
+                            return 
+                            {
+                                AppUser instance;
+                                instance = new AppUser();
+                                instance.<Id>k__BackingField = dataReader.GetGuid(0);
+                                instance.<CreatedAt>k__BackingField = dataReader.GetDateTime(1);
+                                instance.<DailyRequestCount>k__BackingField = dataReader.GetInt32(2);
+                                instance.<FirstName>k__BackingField = dataReader.IsDBNull(3) ? default(string) : dataReader.GetString(3);
+                                instance.<IsPremium>k__BackingField = dataReader.GetBoolean(4);
+                                instance.<LastName>k__BackingField = dataReader.IsDBNull(5) ? default(string) : dataReader.GetString(5);
+                                instance.<LastRequestDate>k__BackingField = dataReader.GetDateTime(6);
+                                instance.<TelegramId>k__BackingField = dataReader.GetInt64(7);
+                                instance.<UpdatedAt>k__BackingField = dataReader.GetDateTime(8);
+                                instance.<UserName>k__BackingField = dataReader.IsDBNull(9) ? default(string) : dataReader.GetString(9);
+                                (instance is IInjectableService) ? ((IInjectableService)instance).Injected(
+                                    context: materializationContext1.Context, 
+                                    entity: instance, 
+                                    queryTrackingBehavior: TrackAll, 
+                                    structuralType: [LIFTABLE Constant: EntityType: AppUser | Resolver: namelessParameter{2} => namelessParameter{2}.Dependencies.Model.FindEntityType("PromptGen.Api.Entities.Identity.AppUser")]) : default(void);
+                                return instance;
+                            }}
+                    default: 
+                        default(AppUser)
+                }
+                ;
+                entry1 = entityType1 == default(IEntityType) ? default(InternalEntityEntry) : queryContext.StartTracking(
+                    entityType: entityType1, 
+                    entity: instance1, 
+                    snapshot: shadowSnapshot1);
+                return instance1;
+            } : default(void);
+            return instance1;
+        };
+        return entity;
+    }, 
+    contextType: PromptGen.Api.Persistence.Data.AppDbContext, 
+    standAloneStateManager: False, 
+    detailedErrorsEnabled: False, 
+    threadSafetyChecksEnabled: True)
+    .SingleOrDefault()'
+2026-03-31 18:46:25.941 +04:00 [DBG] Creating DbConnection.
+2026-03-31 18:46:26.002 +04:00 [DBG] Created DbConnection. (58ms).
+2026-03-31 18:46:26.008 +04:00 [DBG] Opening connection to database 'PromptGenDb' on server 'tcp://127.0.0.1:5432'.
+2026-03-31 18:46:26.211 +04:00 [DBG] Opened connection to database 'PromptGenDb' on server 'tcp://127.0.0.1:5432'.
+2026-03-31 18:46:26.218 +04:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2026-03-31 18:46:26.230 +04:00 [DBG] Created DbCommand for 'ExecuteReader' (8ms).
+2026-03-31 18:46:26.240 +04:00 [DBG] Initialized DbCommand for 'ExecuteReader' (22ms).
+2026-03-31 18:46:26.257 +04:00 [DBG] Executing DbCommand [Parameters=[@chatId='?' (DbType = Int64)], CommandType='"Text"', CommandTimeout='30']
+SELECT u."Id", u."CreatedAt", u."DailyRequestCount", u."FirstName", u."IsPremium", u."LastName", u."LastRequestDate", u."TelegramId", u."UpdatedAt", u."UserName"
+FROM "Users" AS u
+WHERE u."TelegramId" = @chatId
+LIMIT 1
+2026-03-31 18:46:26.359 +04:00 [INF] Executed DbCommand (103ms) [Parameters=[@chatId='?' (DbType = Int64)], CommandType='"Text"', CommandTimeout='30']
+SELECT u."Id", u."CreatedAt", u."DailyRequestCount", u."FirstName", u."IsPremium", u."LastName", u."LastRequestDate", u."TelegramId", u."UpdatedAt", u."UserName"
+FROM "Users" AS u
+WHERE u."TelegramId" = @chatId
+LIMIT 1
+2026-03-31 18:46:26.436 +04:00 [DBG] Context 'AppDbContext' started tracking 'AppUser' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2026-03-31 18:46:26.495 +04:00 [DBG] Closing data reader to 'PromptGenDb' on server 'tcp://127.0.0.1:5432'.
+2026-03-31 18:46:26.511 +04:00 [DBG] A data reader for 'PromptGenDb' on server 'tcp://127.0.0.1:5432' is being disposed after spending 138ms reading results.
+2026-03-31 18:46:26.517 +04:00 [DBG] Closing connection to database 'PromptGenDb' on server 'tcp://127.0.0.1:5432'.
+2026-03-31 18:46:26.527 +04:00 [DBG] Closed connection to database 'PromptGenDb' on server 'tcp://127.0.0.1:5432' (9ms).
+2026-03-31 18:46:26.820 +04:00 [INF] Mətn əsaslı prompt istəyi gəldi: salam
+2026-03-31 18:46:26.833 +04:00 [INF] Start processing HTTP request POST https://generativelanguage.googleapis.com/v1/models/gemini-1.5-flash:generateContent?*
+2026-03-31 18:46:26.838 +04:00 [INF] Sending HTTP request POST https://generativelanguage.googleapis.com/v1/models/gemini-1.5-flash:generateContent?*
+2026-03-31 18:46:27.318 +04:00 [INF] Received HTTP response headers after 473.791ms - 404
+2026-03-31 18:46:27.322 +04:00 [INF] End processing HTTP request after 490.3308ms - 404
+2026-03-31 18:46:27.326 +04:00 [ERR] Gemini API Xətası! Status: "NotFound", Detal: {
+  "error": {
+    "code": 404,
+    "message": "models/gemini-1.5-flash is not found for API version v1, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.",
+    "status": "NOT_FOUND"
+  }
+}
+
+2026-03-31 18:46:27.483 +04:00 [DBG] 'AppDbContext' disposed.
+2026-03-31 18:46:27.489 +04:00 [DBG] Disposing connection to database 'PromptGenDb' on server 'tcp://127.0.0.1:5432'.
+2026-03-31 18:46:27.493 +04:00 [DBG] Disposed connection to database 'PromptGenDb' on server 'tcp://127.0.0.1:5432' (4ms).
+2026-03-31 18:46:41.883 +04:00 [DBG] Entity Framework Core 10.0.5 initialized 'AppDbContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:10.0.1+2679a9d768d14f34d077e037311f80acb6f6b3b4' with options: None
+2026-03-31 18:46:41.894 +04:00 [DBG] Creating DbConnection.
+2026-03-31 18:46:41.897 +04:00 [DBG] Created DbConnection. (2ms).
+2026-03-31 18:46:41.899 +04:00 [DBG] Opening connection to database 'PromptGenDb' on server 'tcp://127.0.0.1:5432'.
+2026-03-31 18:46:41.902 +04:00 [DBG] Opened connection to database 'PromptGenDb' on server 'tcp://127.0.0.1:5432'.
+2026-03-31 18:46:41.905 +04:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2026-03-31 18:46:41.908 +04:00 [DBG] Created DbCommand for 'ExecuteReader' (2ms).
+2026-03-31 18:46:41.911 +04:00 [DBG] Initialized DbCommand for 'ExecuteReader' (5ms).
+2026-03-31 18:46:41.914 +04:00 [DBG] Executing DbCommand [Parameters=[@chatId='?' (DbType = Int64)], CommandType='"Text"', CommandTimeout='30']
+SELECT u."Id", u."CreatedAt", u."DailyRequestCount", u."FirstName", u."IsPremium", u."LastName", u."LastRequestDate", u."TelegramId", u."UpdatedAt", u."UserName"
+FROM "Users" AS u
+WHERE u."TelegramId" = @chatId
+LIMIT 1
+2026-03-31 18:46:41.920 +04:00 [INF] Executed DbCommand (7ms) [Parameters=[@chatId='?' (DbType = Int64)], CommandType='"Text"', CommandTimeout='30']
+SELECT u."Id", u."CreatedAt", u."DailyRequestCount", u."FirstName", u."IsPremium", u."LastName", u."LastRequestDate", u."TelegramId", u."UpdatedAt", u."UserName"
+FROM "Users" AS u
+WHERE u."TelegramId" = @chatId
+LIMIT 1
+2026-03-31 18:46:41.925 +04:00 [DBG] Context 'AppDbContext' started tracking 'AppUser' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2026-03-31 18:46:41.928 +04:00 [DBG] Closing data reader to 'PromptGenDb' on server 'tcp://127.0.0.1:5432'.
+2026-03-31 18:46:41.930 +04:00 [DBG] A data reader for 'PromptGenDb' on server 'tcp://127.0.0.1:5432' is being disposed after spending 5ms reading results.
+2026-03-31 18:46:41.933 +04:00 [DBG] Closing connection to database 'PromptGenDb' on server 'tcp://127.0.0.1:5432'.
+2026-03-31 18:46:41.936 +04:00 [DBG] Closed connection to database 'PromptGenDb' on server 'tcp://127.0.0.1:5432' (2ms).
+2026-03-31 18:46:41.939 +04:00 [DBG] 'AppDbContext' disposed.
+2026-03-31 18:46:41.941 +04:00 [DBG] Disposing connection to database 'PromptGenDb' on server 'tcp://127.0.0.1:5432'.
+2026-03-31 18:46:41.944 +04:00 [DBG] Disposed connection to database 'PromptGenDb' on server 'tcp://127.0.0.1:5432' (2ms).
+2026-03-31 18:46:55.219 +04:00 [DBG] Entity Framework Core 10.0.5 initialized 'AppDbContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:10.0.1+2679a9d768d14f34d077e037311f80acb6f6b3b4' with options: None
+2026-03-31 18:46:55.227 +04:00 [DBG] Creating DbConnection.
+2026-03-31 18:46:55.229 +04:00 [DBG] Created DbConnection. (1ms).
+2026-03-31 18:46:55.231 +04:00 [DBG] Opening connection to database 'PromptGenDb' on server 'tcp://127.0.0.1:5432'.
+2026-03-31 18:46:55.234 +04:00 [DBG] Opened connection to database 'PromptGenDb' on server 'tcp://127.0.0.1:5432'.
+2026-03-31 18:46:55.237 +04:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2026-03-31 18:46:55.239 +04:00 [DBG] Created DbCommand for 'ExecuteReader' (2ms).
+2026-03-31 18:46:55.241 +04:00 [DBG] Initialized DbCommand for 'ExecuteReader' (4ms).
+2026-03-31 18:46:55.244 +04:00 [DBG] Executing DbCommand [Parameters=[@chatId='?' (DbType = Int64)], CommandType='"Text"', CommandTimeout='30']
+SELECT u."Id", u."CreatedAt", u."DailyRequestCount", u."FirstName", u."IsPremium", u."LastName", u."LastRequestDate", u."TelegramId", u."UpdatedAt", u."UserName"
+FROM "Users" AS u
+WHERE u."TelegramId" = @chatId
+LIMIT 1
+2026-03-31 18:46:55.249 +04:00 [INF] Executed DbCommand (5ms) [Parameters=[@chatId='?' (DbType = Int64)], CommandType='"Text"', CommandTimeout='30']
+SELECT u."Id", u."CreatedAt", u."DailyRequestCount", u."FirstName", u."IsPremium", u."LastName", u."LastRequestDate", u."TelegramId", u."UpdatedAt", u."UserName"
+FROM "Users" AS u
+WHERE u."TelegramId" = @chatId
+LIMIT 1
+2026-03-31 18:46:55.254 +04:00 [DBG] Context 'AppDbContext' started tracking 'AppUser' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2026-03-31 18:46:55.256 +04:00 [DBG] Closing data reader to 'PromptGenDb' on server 'tcp://127.0.0.1:5432'.
+2026-03-31 18:46:55.259 +04:00 [DBG] A data reader for 'PromptGenDb' on server 'tcp://127.0.0.1:5432' is being disposed after spending 5ms reading results.
+2026-03-31 18:46:55.261 +04:00 [DBG] Closing connection to database 'PromptGenDb' on server 'tcp://127.0.0.1:5432'.
+2026-03-31 18:46:55.264 +04:00 [DBG] Closed connection to database 'PromptGenDb' on server 'tcp://127.0.0.1:5432' (2ms).
+2026-03-31 18:46:55.467 +04:00 [INF] Mətn əsaslı prompt istəyi gəldi: salam
+2026-03-31 18:46:55.469 +04:00 [INF] Start processing HTTP request POST https://generativelanguage.googleapis.com/v1/models/gemini-1.5-flash:generateContent?*
+2026-03-31 18:46:55.470 +04:00 [INF] Sending HTTP request POST https://generativelanguage.googleapis.com/v1/models/gemini-1.5-flash:generateContent?*
+2026-03-31 18:46:55.681 +04:00 [INF] Received HTTP response headers after 209.197ms - 404
+2026-03-31 18:46:55.683 +04:00 [INF] End processing HTTP request after 213.9751ms - 404
+2026-03-31 18:46:55.685 +04:00 [ERR] Gemini API Xətası! Status: "NotFound", Detal: {
+  "error": {
+    "code": 404,
+    "message": "models/gemini-1.5-flash is not found for API version v1, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.",
+    "status": "NOT_FOUND"
+  }
+}
+
+2026-03-31 18:46:55.877 +04:00 [DBG] 'AppDbContext' disposed.
+2026-03-31 18:46:55.879 +04:00 [DBG] Disposing connection to database 'PromptGenDb' on server 'tcp://127.0.0.1:5432'.
+2026-03-31 18:46:55.881 +04:00 [DBG] Disposed connection to database 'PromptGenDb' on server 'tcp://127.0.0.1:5432' (2ms).
+2026-03-31 18:48:24.195 +04:00 [DBG] Connection id "0HNKF6H0H1LEK" disconnecting.
+2026-03-31 18:48:24.195 +04:00 [DBG] Connection id "0HNKF6H0H1LEL" disconnecting.
+2026-03-31 18:48:24.196 +04:00 [DBG] Connection id "0HNKF6H0H1LEM" disconnecting.
+2026-03-31 18:48:24.196 +04:00 [DBG] Connection id "0HNKF6H0H1LEN" disconnecting.
+2026-03-31 18:48:24.196 +04:00 [DBG] Connection id "0HNKF6H0H1LEO" disconnecting.
+2026-03-31 18:48:24.199 +04:00 [DBG] Connection id "0HNKF6H0H1LEK" stopped.
+2026-03-31 18:48:24.201 +04:00 [DBG] Connection id "0HNKF6H0H1LEL" stopped.
+2026-03-31 18:48:24.203 +04:00 [DBG] Connection id "0HNKF6H0H1LEM" stopped.
+2026-03-31 18:48:24.204 +04:00 [DBG] Connection id "0HNKF6H0H1LEN" stopped.
+2026-03-31 18:48:24.207 +04:00 [DBG] Connection id "0HNKF6H0H1LEO" stopped.
+2026-03-31 18:48:24.209 +04:00 [DBG] Connection id "0HNKF6H0H1LEK" sending FIN because: "The Socket transport's send loop completed gracefully."
+2026-03-31 18:48:24.211 +04:00 [DBG] Connection id "0HNKF6H0H1LEL" sending FIN because: "The Socket transport's send loop completed gracefully."
+2026-03-31 18:48:24.213 +04:00 [DBG] Connection id "0HNKF6H0H1LEM" sending FIN because: "The Socket transport's send loop completed gracefully."
+2026-03-31 18:48:24.215 +04:00 [DBG] Connection id "0HNKF6H0H1LEN" sending FIN because: "The Socket transport's send loop completed gracefully."
+2026-03-31 18:48:24.217 +04:00 [DBG] Connection id "0HNKF6H0H1LEO" sending FIN because: "The Socket transport's send loop completed gracefully."
+2026-03-31 18:48:26.836 +04:00 [DBG] HttpMessageHandler expired after 120000ms for client ''
+2026-03-31 18:48:36.840 +04:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2026-03-31 18:48:36.846 +04:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0383ms - processed: 0 items - remaining: 1 items
+2026-03-31 18:48:46.851 +04:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2026-03-31 18:48:46.855 +04:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.005ms - processed: 0 items - remaining: 1 items
+2026-03-31 18:48:56.858 +04:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2026-03-31 18:48:56.860 +04:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.3879ms - processed: 1 items - remaining: 0 items
+2026-03-31 18:51:36.801 +04:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2026-03-31 18:51:36.890 +04:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2026-03-31 18:51:36.894 +04:00 [INF] Bot ve API (Scalar ile) aktivdir...
+2026-03-31 18:51:36.899 +04:00 [DBG] Hosting starting
+2026-03-31 18:51:36.915 +04:00 [DBG] Middleware loaded
+2026-03-31 18:51:36.918 +04:00 [DBG] Middleware loaded. Script /_framework/aspnetcore-browser-refresh.js (16511 B).
+2026-03-31 18:51:36.925 +04:00 [DBG] Middleware loaded. Script /_framework/blazor-hotreload.js (799 B).
+2026-03-31 18:51:36.963 +04:00 [DBG] Middleware configuration started with options: {AllowedHosts = *, AllowEmptyHosts = True, IncludeFailureMessage = True}
+2026-03-31 18:51:36.966 +04:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2026-03-31 18:51:36.969 +04:00 [DBG] Middleware loaded: DOTNET_MODIFIABLE_ASSEMBLIES=debug, __ASPNETCORE_BROWSER_TOOLS=true
+2026-03-31 18:51:36.986 +04:00 [INF] Now listening on: http://localhost:5050
+2026-03-31 18:51:36.988 +04:00 [DBG] Loaded hosting startup assembly PromptGen.Api
+2026-03-31 18:51:36.990 +04:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2026-03-31 18:51:36.991 +04:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.ApiEndpointDiscovery
+2026-03-31 18:51:36.993 +04:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2026-03-31 18:51:37.001 +04:00 [DBG] Executing API description provider 'EndpointMetadataApiDescriptionProvider' from assembly Microsoft.AspNetCore.Mvc.ApiExplorer v10.0.0.0.
+2026-03-31 18:51:37.003 +04:00 [DBG] Executing API description provider 'DefaultApiDescriptionProvider' from assembly Microsoft.AspNetCore.Mvc.ApiExplorer v10.0.0.0.
+2026-03-31 18:51:37.028 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-03-31 18:51:37.029 +04:00 [INF] Hosting environment: Development
+2026-03-31 18:51:37.031 +04:00 [INF] Content root path: C:\Users\User\OneDrive\Desktop\TelegramBot\src\PromptGen.Api
+2026-03-31 18:51:37.032 +04:00 [DBG] Hosting started
+2026-03-31 18:51:37.449 +04:00 [DBG] Connection id "0HNKF6K1B5890" accepted.
+2026-03-31 18:51:37.449 +04:00 [DBG] Connection id "0HNKF6K1B588V" accepted.
+2026-03-31 18:51:37.451 +04:00 [DBG] Connection id "0HNKF6K1B5890" started.
+2026-03-31 18:51:37.453 +04:00 [DBG] Connection id "0HNKF6K1B588V" started.
+2026-03-31 18:51:37.470 +04:00 [DBG] Connection id "0HNKF6K1B588V" received FIN.
+2026-03-31 18:51:37.470 +04:00 [DBG] Connection id "0HNKF6K1B5890" received FIN.
+2026-03-31 18:51:37.475 +04:00 [DBG] Connection id "0HNKF6K1B5890" sending FIN because: "The Socket transport's send loop completed gracefully."
+2026-03-31 18:51:37.475 +04:00 [DBG] Connection id "0HNKF6K1B588V" sending FIN because: "The Socket transport's send loop completed gracefully."
+2026-03-31 18:51:37.477 +04:00 [DBG] Connection id "0HNKF6K1B5891" accepted.
+2026-03-31 18:51:37.480 +04:00 [DBG] Connection id "0HNKF6K1B5890" disconnecting.
+2026-03-31 18:51:37.481 +04:00 [DBG] Connection id "0HNKF6K1B588V" disconnecting.
+2026-03-31 18:51:37.483 +04:00 [DBG] Connection id "0HNKF6K1B5891" started.
+2026-03-31 18:51:37.487 +04:00 [DBG] Connection id "0HNKF6K1B5890" stopped.
+2026-03-31 18:51:37.487 +04:00 [DBG] Connection id "0HNKF6K1B588V" stopped.
+2026-03-31 18:51:37.493 +04:00 [DBG] Connection id "0HNKF6K1B5892" accepted.
+2026-03-31 18:51:37.494 +04:00 [DBG] Connection id "0HNKF6K1B5892" started.
+2026-03-31 18:51:37.513 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5050/scalar/ - null null
+2026-03-31 18:51:37.557 +04:00 [DBG] 1 candidate(s) found for the request path '/scalar/'
+2026-03-31 18:51:37.561 +04:00 [DBG] Endpoint 'HTTP: GET /scalar/{documentName?}' with route pattern '/scalar/{documentName?}' is valid for the request path '/scalar/'
+2026-03-31 18:51:37.564 +04:00 [DBG] Request matched endpoint 'HTTP: GET /scalar/{documentName?}'
+2026-03-31 18:51:37.571 +04:00 [WRN] Failed to determine the https port for redirect.
+2026-03-31 18:51:37.573 +04:00 [INF] Executing endpoint 'HTTP: GET /scalar/{documentName?}'
+2026-03-31 18:51:37.706 +04:00 [INF] Write content with HTTP Response ContentType of text/html
+2026-03-31 18:51:37.711 +04:00 [DBG] Response markup is scheduled to include Browser Link script injection.
+2026-03-31 18:51:37.716 +04:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2026-03-31 18:51:37.727 +04:00 [INF] Executed endpoint 'HTTP: GET /scalar/{documentName?}'
+2026-03-31 18:51:37.729 +04:00 [DBG] Response markup was updated to include Browser Link script injection.
+2026-03-31 18:51:37.732 +04:00 [DBG] Response markup was updated to include browser refresh script injection.
+2026-03-31 18:51:37.734 +04:00 [DBG] Connection id "0HNKF6K1B5891" completed keep alive response.
+2026-03-31 18:51:37.737 +04:00 [DBG] Connection id "0HNKF6K1B5893" accepted.
+2026-03-31 18:51:37.737 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5050/scalar/ - 200 null text/html 225.989ms
+2026-03-31 18:51:37.738 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5050/scalar/scalar.js - null null
+2026-03-31 18:51:37.739 +04:00 [DBG] Connection id "0HNKF6K1B5893" started.
+2026-03-31 18:51:37.758 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5050/_framework/aspnetcore-browser-refresh.js - null null
+2026-03-31 18:51:37.760 +04:00 [DBG] 2 candidate(s) found for the request path '/scalar/scalar.js'
+2026-03-31 18:51:37.761 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5050/scalar/scalar.aspnetcore.js - null null
+2026-03-31 18:51:37.766 +04:00 [DBG] Script injected: /_framework/aspnetcore-browser-refresh.js
+2026-03-31 18:51:37.767 +04:00 [DBG] Endpoint 'HTTP: GET /scalar/scalar.js' with route pattern '/scalar/scalar.js' is valid for the request path '/scalar/scalar.js'
+2026-03-31 18:51:37.772 +04:00 [DBG] 2 candidate(s) found for the request path '/scalar/scalar.aspnetcore.js'
+2026-03-31 18:51:37.772 +04:00 [DBG] Connection id "0HNKF6K1B5891" completed keep alive response.
+2026-03-31 18:51:37.775 +04:00 [DBG] Endpoint 'HTTP: GET /scalar/{documentName?}' with route pattern '/scalar/{documentName?}' is valid for the request path '/scalar/scalar.js'
+2026-03-31 18:51:37.777 +04:00 [DBG] Endpoint 'HTTP: GET /scalar/scalar.aspnetcore.js' with route pattern '/scalar/scalar.aspnetcore.js' is valid for the request path '/scalar/scalar.aspnetcore.js'
+2026-03-31 18:51:37.779 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5050/_framework/aspnetcore-browser-refresh.js - 200 16511 application/javascript; charset=utf-8 20.632ms
+2026-03-31 18:51:37.781 +04:00 [DBG] Request matched endpoint 'HTTP: GET /scalar/scalar.js'
+2026-03-31 18:51:37.784 +04:00 [DBG] Endpoint 'HTTP: GET /scalar/{documentName?}' with route pattern '/scalar/{documentName?}' is valid for the request path '/scalar/scalar.aspnetcore.js'
+2026-03-31 18:51:37.790 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5050/_vs/browserLink - null null
+2026-03-31 18:51:37.792 +04:00 [INF] Executing endpoint 'HTTP: GET /scalar/scalar.js'
+2026-03-31 18:51:37.794 +04:00 [DBG] Request matched endpoint 'HTTP: GET /scalar/scalar.aspnetcore.js'
+2026-03-31 18:51:37.803 +04:00 [INF] Executing endpoint 'HTTP: GET /scalar/scalar.aspnetcore.js'
+2026-03-31 18:51:37.804 +04:00 [INF] Sending file with download name ''.
+2026-03-31 18:51:37.805 +04:00 [INF] Sending file with download name ''.
+2026-03-31 18:51:37.808 +04:00 [DBG] The file result has not been enabled for processing range requests. To enable it, set the EnableRangeProcessing property on the result to 'true'.
+2026-03-31 18:51:37.808 +04:00 [DBG] The file result has not been enabled for processing range requests. To enable it, set the EnableRangeProcessing property on the result to 'true'.
+2026-03-31 18:51:37.811 +04:00 [INF] Executed endpoint 'HTTP: GET /scalar/scalar.aspnetcore.js'
+2026-03-31 18:51:37.813 +04:00 [DBG] Connection id "0HNKF6K1B5893" completed keep alive response.
+2026-03-31 18:51:37.815 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5050/scalar/scalar.aspnetcore.js - 200 1111 text/javascript 53.6677ms
+2026-03-31 18:51:37.827 +04:00 [DBG] Connection id "0HNKF6K1B5891" completed keep alive response.
+2026-03-31 18:51:37.829 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5050/_vs/browserLink - 200 null text/javascript; charset=UTF-8 39.4138ms
+2026-03-31 18:51:37.830 +04:00 [INF] Executed endpoint 'HTTP: GET /scalar/scalar.js'
+2026-03-31 18:51:37.838 +04:00 [DBG] Connection id "0HNKF6K1B5892" completed keep alive response.
+2026-03-31 18:51:37.840 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5050/scalar/scalar.js - 200 1128805 text/javascript 101.552ms

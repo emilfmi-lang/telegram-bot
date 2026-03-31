@@ -38,7 +38,7 @@ public class GeminiService : IGeminiService
         try
         {
             using var client = _httpClientFactory.CreateClient();
-            var url = $"https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key={_apiKey}";
+            var url = $"https://generativelanguage.googleapis.com/v1/models/gemini-1.5-flash:generateContent?key={_apiKey}";
 
             var response = await client.PostAsJsonAsync(url, requestBody);
 
