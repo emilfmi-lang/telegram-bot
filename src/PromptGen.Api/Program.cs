@@ -1,4 +1,5 @@
 using Microsoft.EntityFrameworkCore;
+using PromptGen.Api.Concretes.Interfaces;
 using PromptGen.Api.Concretes.Services;
 using PromptGen.Api.Persistence.Data;
 using Scalar.AspNetCore;
@@ -34,8 +35,8 @@ try
         return new TelegramBotClient(token);
     });
     builder.Services.AddHostedService<BotBackgroundService>();
-    builder.Services.AddScoped<GeminiService>();
-
+    builder.Services.AddScoped<IGeminiService,GeminiService>();
+    builder.Services.AddHttpClient();
     builder.Services.AddControllers();
 
     var app = builder.Build();
