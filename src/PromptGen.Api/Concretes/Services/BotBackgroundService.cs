@@ -5,7 +5,6 @@ using PromptGen.Api.Persistence.Data;
 using Telegram.Bot;
 using Telegram.Bot.Polling;
 using Telegram.Bot.Types;
-using Telegram.Bot.Types.Enums;
 
 namespace PromptGen.Api.Concretes.Services;
 
@@ -72,14 +71,14 @@ public class BotBackgroundService(ITelegramBotClient botClient, IServiceProvider
                 }
                 else if (message.Text is { } messageText)
                 {
-                    if (messageText.StartsWith("/")) return; 
+                    if (messageText.StartsWith("/")) return;
 
                     await botClient.SendMessage(chatId, "🤖 Mövzu əsasında prompt hazırlayıram...", cancellationToken: cancellationToken);
                     aiResult = await geminiService.GeneratePromptAsync(messageText);
                 }
                 else
                 {
-                    return; 
+                    return;
                 }
 
                 await botClient.SendMessage(

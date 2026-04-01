@@ -1,8 +1,5 @@
 ﻿using PromptGen.Api.Concretes.Interfaces;
-using System.Net.Http;
-using System.Text;
 using System.Text.Json;
-using System.Text.Json.Nodes;
 
 namespace PromptGen.Api.Concretes.Services;
 
