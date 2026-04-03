@@ -7,7 +7,7 @@ using Serilog;
 using Telegram.Bot;
 
 Log.Logger = new LoggerConfiguration()
-    .MinimumLevel.Debug()
+    .MinimumLevel.Information()
     .WriteTo.Console()
     .WriteTo.File("logs/bot_log.txt", rollingInterval: RollingInterval.Day)
     .CreateLogger();
