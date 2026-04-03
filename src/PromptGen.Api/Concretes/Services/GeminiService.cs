@@ -82,4 +82,5 @@ public class GeminiService : IGeminiService
 
         return await SendRequestToGemini(requestBody);
     }
+
 }
