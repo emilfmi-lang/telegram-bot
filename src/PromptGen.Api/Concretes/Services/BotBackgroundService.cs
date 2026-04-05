@@ -12,6 +12,7 @@ public class BotBackgroundService(ITelegramBotClient botClient, IServiceProvider
 {
     private readonly ITelegramBotClient _botClient = botClient;
     private readonly IServiceProvider _serviceProvider = serviceProvider;
+    private readonly ILogger<BotBackgroundService> _logger;
 
     protected override async Task ExecuteAsync(CancellationToken stoppingToken)
     {
@@ -27,14 +28,15 @@ public class BotBackgroundService(ITelegramBotClient botClient, IServiceProvider
              cancellationToken: stoppingToken
          );
         Console.WriteLine("🚀Bot işə düşdü və mesajları gözləyir...");
+        await Task.Delay(-1, stoppingToken);
     }
+
     private async Task HandleUpdateAsync(ITelegramBotClient botClient, Update update, CancellationToken cancellationToken)
     {
-        if (update.Message is not { } message)
-            return;
+        if (update.Message is not { } message) return;
 
         var chatId = message.Chat.Id;
-        var firstName = message.From?.FirstName ?? "Naməlum";
+        var firstName = message.From?.FirstName ?? "Dostum";
 
         using (var scope = _serviceProvider.CreateScope())
         {
@@ -47,8 +49,14 @@ public class BotBackgroundService(ITelegramBotClient botClient, IServiceProvider
                 user = new AppUser { TelegramId = chatId, FirstName = firstName, CreatedAt = DateTime.UtcNow };
                 dbContext.Users.Add(user);
                 await dbContext.SaveChangesAsync(cancellationToken);
+            }
 
-                await botClient.SendMessage(chatId, $"Salam {firstName}, xoş gəlmisən! Sən qeydiyyata alındın. Mənə mövzu yaz və ya şəkil göndər.", cancellationToken: cancellationToken);
+            if (message.Text != null && message.Text.StartsWith("/"))
+            {
+                if (message.Text.ToLower() == "/start")
+                {
+                    await botClient.SendMessage(chatId, $"Salam {firstName}! 👋\n\nMənə bir mövzu yaz (məs: 'Meşədə qədim qala') və ya bir şəkil göndər, mən isə sənin üçün Midjourney promptu hazırlayım.", cancellationToken: cancellationToken);
+                }
                 return;
             }
 
@@ -58,9 +66,9 @@ public class BotBackgroundService(ITelegramBotClient botClient, IServiceProvider
 
                 if (message.Type == Telegram.Bot.Types.Enums.MessageType.Photo)
                 {
-                    await botClient.SendMessage(chatId, "📸 Şəklini analiz edirəm, bir az gözlə...", cancellationToken: cancellationToken);
+                    await botClient.SendMessage(chatId, "📸 Şəkli analiz edirəm, bir az gözlə...", cancellationToken: cancellationToken);
 
-                    var photo = message.Photo!.Last();
+                    var photo = message.Photo!.Last(); 
                     var file = await botClient.GetFile(photo.FileId, cancellationToken);
 
                     using var ms = new MemoryStream();
@@ -71,27 +79,24 @@ public class BotBackgroundService(ITelegramBotClient botClient, IServiceProvider
                 }
                 else if (message.Text is { } messageText)
                 {
-                    if (messageText.StartsWith("/")) return;
-
                     await botClient.SendMessage(chatId, "🤖 Mövzu əsasında prompt hazırlayıram...", cancellationToken: cancellationToken);
                     aiResult = await geminiService.GeneratePromptAsync(messageText);
                 }
-                else
-                {
-                    return;
-                }
 
-                await botClient.SendMessage(
-                    chatId: chatId,
-                    text: $"✨ **Sənin üçün hazırladığım Prompt:**\n\n`{aiResult}`",
-                    parseMode: Telegram.Bot.Types.Enums.ParseMode.Markdown,
-                    cancellationToken: cancellationToken
-                );
+                if (!string.IsNullOrEmpty(aiResult))
+                {
+                    await botClient.SendMessage(
+                        chatId: chatId,
+                        text: $"✨ **Sənin üçün hazırladığım Prompt:**\n\n`{aiResult}`",
+                        parseMode: Telegram.Bot.Types.Enums.ParseMode.Markdown,
+                        cancellationToken: cancellationToken
+                    );
+                }
             }
             catch (Exception ex)
             {
-                Console.WriteLine($"Xəta baş verdi: {ex.Message}");
-                await botClient.SendMessage(chatId, "Üzr istəyirəm, AI cavab hazırlayarkən problem yaşandı.", cancellationToken: cancellationToken);
+                _logger.LogError(ex, "Mesaj emalı zamanı xəta!"); 
+                await botClient.SendMessage(chatId, "⚠️ Üzr istəyirəm, Gemini AI hazırda bu sorğuya cavab verə bilmir.", cancellationToken: cancellationToken);
             }
         }
     }

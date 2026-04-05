@@ -1,5 +1,4 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using PromptGen.Api.Entities;
 using PromptGen.Api.Entities.Identity;
 using System.Reflection;
 
