@@ -2,4 +2,8 @@
 
 public class PromptLogService
 {
+    public PromptLogService()
+    {
+        
+    }
 }

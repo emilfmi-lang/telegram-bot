@@ -38,3 +38,51 @@ SELECT u."Id", u."CreatedAt", u."DailyRequestCount", u."FirstName", u."IsPremium
 FROM "Users" AS u
 WHERE u."TelegramId" = @chatId
 LIMIT 1
+2026-04-08 21:31:07.222 +04:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2026-04-08 21:31:07.300 +04:00 [INF] Bot ve API (Scalar ile) aktivdir...
+2026-04-08 21:31:07.420 +04:00 [INF] Now listening on: http://localhost:5050
+2026-04-08 21:31:07.454 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-04-08 21:31:07.457 +04:00 [INF] Hosting environment: Development
+2026-04-08 21:31:07.460 +04:00 [INF] Content root path: C:\Users\User\OneDrive\Desktop\TelegramBot\src\PromptGen.Api
+2026-04-08 21:31:07.906 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5050/scalar - null null
+2026-04-08 21:31:07.993 +04:00 [WRN] Failed to determine the https port for redirect.
+2026-04-08 21:31:08.000 +04:00 [INF] Executing endpoint 'HTTP: GET /scalar/{documentName?}'
+2026-04-08 21:31:08.018 +04:00 [INF] Executing RedirectResult, redirecting to scalar/.
+2026-04-08 21:31:08.023 +04:00 [INF] Executed endpoint 'HTTP: GET /scalar/{documentName?}'
+2026-04-08 21:31:08.039 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5050/scalar - 302 null null 135.0282ms
+2026-04-08 21:31:08.072 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5050/scalar/ - null null
+2026-04-08 21:31:08.081 +04:00 [INF] Executing endpoint 'HTTP: GET /scalar/{documentName?}'
+2026-04-08 21:31:08.257 +04:00 [INF] Write content with HTTP Response ContentType of text/html
+2026-04-08 21:31:08.274 +04:00 [INF] Executed endpoint 'HTTP: GET /scalar/{documentName?}'
+2026-04-08 21:31:08.278 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5050/scalar/ - 200 null text/html 206.9993ms
+2026-04-08 21:31:08.285 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5050/scalar/scalar.aspnetcore.js - null null
+2026-04-08 21:31:08.287 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5050/scalar/scalar.js - null null
+2026-04-08 21:31:08.292 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5050/_vs/browserLink - null null
+2026-04-08 21:31:08.293 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5050/_framework/aspnetcore-browser-refresh.js - null null
+2026-04-08 21:31:08.295 +04:00 [INF] Executing endpoint 'HTTP: GET /scalar/scalar.aspnetcore.js'
+2026-04-08 21:31:08.301 +04:00 [INF] Executing endpoint 'HTTP: GET /scalar/scalar.js'
+2026-04-08 21:31:08.315 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5050/_framework/aspnetcore-browser-refresh.js - 200 16511 application/javascript; charset=utf-8 21.2484ms
+2026-04-08 21:31:08.332 +04:00 [INF] Sending file with download name ''.
+2026-04-08 21:31:08.332 +04:00 [INF] Sending file with download name ''.
+2026-04-08 21:31:08.350 +04:00 [INF] Executed endpoint 'HTTP: GET /scalar/scalar.aspnetcore.js'
+2026-04-08 21:31:08.354 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5050/scalar/scalar.aspnetcore.js - 200 1111 text/javascript 69.3572ms
+2026-04-08 21:31:08.362 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5050/_vs/browserLink - 200 null text/javascript; charset=UTF-8 70.0329ms
+2026-04-08 21:31:08.390 +04:00 [INF] Executed endpoint 'HTTP: GET /scalar/scalar.js'
+2026-04-08 21:31:08.398 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5050/scalar/scalar.js - 200 1128805 text/javascript 111.222ms
+2026-04-08 21:31:08.845 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5050/openapi/v1.json - null null
+2026-04-08 21:31:08.854 +04:00 [INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+2026-04-08 21:31:08.863 +04:00 [INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+2026-04-08 21:31:08.867 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5050/openapi/v1.json - 200 null application/json;charset=utf-8 21.9993ms
+2026-04-08 21:36:40.826 +04:00 [INF] Executed DbCommand (63ms) [Parameters=[@chatId='?' (DbType = Int64)], CommandType='"Text"', CommandTimeout='30']
+SELECT u."Id", u."CreatedAt", u."DailyRequestCount", u."FirstName", u."IsPremium", u."LastName", u."LastRequestDate", u."TelegramId", u."UpdatedAt", u."UserName"
+FROM "Users" AS u
+WHERE u."TelegramId" = @chatId
+LIMIT 1
+2026-04-08 21:36:41.061 +04:00 [INF] Executed DbCommand (22ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = DateTime), @p2='?' (DbType = Int32), @p3='?', @p4='?' (DbType = Boolean), @p5='?', @p6='?' (DbType = DateTime), @p7='?' (DbType = Int64), @p8='?' (DbType = DateTime), @p9='?'], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Users" ("Id", "CreatedAt", "DailyRequestCount", "FirstName", "IsPremium", "LastName", "LastRequestDate", "TelegramId", "UpdatedAt", "UserName")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9);
+2026-04-08 21:37:29.782 +04:00 [INF] Executed DbCommand (3ms) [Parameters=[@chatId='?' (DbType = Int64)], CommandType='"Text"', CommandTimeout='30']
+SELECT u."Id", u."CreatedAt", u."DailyRequestCount", u."FirstName", u."IsPremium", u."LastName", u."LastRequestDate", u."TelegramId", u."UpdatedAt", u."UserName"
+FROM "Users" AS u
+WHERE u."TelegramId" = @chatId
+LIMIT 1
