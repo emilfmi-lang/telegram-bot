@@ -47,3 +47,8 @@ SELECT u."Id", u."CreatedAt", u."DailyRequestCount", u."FirstName", u."IsPremium
 FROM "Users" AS u
 WHERE u."TelegramId" = @chatId
 LIMIT 1
+2026-04-05 23:10:02.866 +04:00 [INF] Executed DbCommand (2ms) [Parameters=[@chatId='?' (DbType = Int64)], CommandType='"Text"', CommandTimeout='30']
+SELECT u."Id", u."CreatedAt", u."DailyRequestCount", u."FirstName", u."IsPremium", u."LastName", u."LastRequestDate", u."TelegramId", u."UpdatedAt", u."UserName"
+FROM "Users" AS u
+WHERE u."TelegramId" = @chatId
+LIMIT 1
