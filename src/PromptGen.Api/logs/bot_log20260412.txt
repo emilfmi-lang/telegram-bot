@@ -1,0 +1,207 @@
+2026-04-12 18:47:20.170 +04:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2026-04-12 18:47:20.212 +04:00 [INF] Bot ve API (Scalar ile) aktivdir...
+2026-04-12 18:47:20.309 +04:00 [INF] Now listening on: http://localhost:5050
+2026-04-12 18:47:20.334 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-04-12 18:47:20.335 +04:00 [INF] Hosting environment: Development
+2026-04-12 18:47:20.335 +04:00 [INF] Content root path: C:\Users\User\OneDrive\Desktop\TelegramBot\src\PromptGen.Api
+2026-04-12 18:47:22.310 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5050/scalar - null null
+2026-04-12 18:47:22.413 +04:00 [WRN] Failed to determine the https port for redirect.
+2026-04-12 18:47:22.417 +04:00 [INF] Executing endpoint 'HTTP: GET /scalar/{documentName?}'
+2026-04-12 18:47:22.427 +04:00 [INF] Executing RedirectResult, redirecting to scalar/.
+2026-04-12 18:47:22.430 +04:00 [INF] Executed endpoint 'HTTP: GET /scalar/{documentName?}'
+2026-04-12 18:47:22.439 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5050/scalar - 302 null null 132.6382ms
+2026-04-12 18:47:22.536 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5050/scalar/ - null null
+2026-04-12 18:47:22.546 +04:00 [INF] Executing endpoint 'HTTP: GET /scalar/{documentName?}'
+2026-04-12 18:47:22.739 +04:00 [INF] Write content with HTTP Response ContentType of text/html
+2026-04-12 18:47:22.758 +04:00 [INF] Executed endpoint 'HTTP: GET /scalar/{documentName?}'
+2026-04-12 18:47:22.761 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5050/scalar/ - 200 null text/html 226.1585ms
+2026-04-12 18:47:22.778 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5050/scalar/scalar.js - null null
+2026-04-12 18:47:22.779 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5050/_framework/aspnetcore-browser-refresh.js - null null
+2026-04-12 18:47:22.779 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5050/scalar/scalar.aspnetcore.js - null null
+2026-04-12 18:47:22.784 +04:00 [INF] Executing endpoint 'HTTP: GET /scalar/scalar.js'
+2026-04-12 18:47:22.784 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5050/_vs/browserLink - null null
+2026-04-12 18:47:22.788 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5050/_framework/aspnetcore-browser-refresh.js - 200 16511 application/javascript; charset=utf-8 8.5206ms
+2026-04-12 18:47:22.790 +04:00 [INF] Executing endpoint 'HTTP: GET /scalar/scalar.aspnetcore.js'
+2026-04-12 18:47:22.798 +04:00 [INF] Sending file with download name ''.
+2026-04-12 18:47:22.801 +04:00 [INF] Sending file with download name ''.
+2026-04-12 18:47:22.806 +04:00 [INF] Executed endpoint 'HTTP: GET /scalar/scalar.aspnetcore.js'
+2026-04-12 18:47:22.809 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5050/scalar/scalar.aspnetcore.js - 200 1111 text/javascript 29.4651ms
+2026-04-12 18:47:22.852 +04:00 [INF] Executed endpoint 'HTTP: GET /scalar/scalar.js'
+2026-04-12 18:47:22.859 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5050/scalar/scalar.js - 200 1128805 text/javascript 80.9992ms
+2026-04-12 18:47:22.866 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5050/_vs/browserLink - 200 null text/javascript; charset=UTF-8 82.0079ms
+2026-04-12 18:47:23.306 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5050/openapi/v1.json - null null
+2026-04-12 18:47:23.310 +04:00 [INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+2026-04-12 18:47:23.318 +04:00 [INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+2026-04-12 18:47:23.319 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5050/openapi/v1.json - 200 null application/json;charset=utf-8 13.711ms
+2026-04-12 18:47:25.672 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5050/scalar/favicon.svg - null null
+2026-04-12 18:47:25.675 +04:00 [INF] Executing endpoint 'HTTP: GET /scalar/favicon.svg'
+2026-04-12 18:47:25.677 +04:00 [INF] Sending file with download name ''.
+2026-04-12 18:47:25.678 +04:00 [INF] Executed endpoint 'HTTP: GET /scalar/favicon.svg'
+2026-04-12 18:47:25.679 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5050/scalar/favicon.svg - 200 533 image/svg+xml 7.199ms
+2026-04-12 18:51:00.800 +04:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2026-04-12 18:51:00.842 +04:00 [INF] Bot ve API (Scalar ile) aktivdir...
+2026-04-12 18:51:00.899 +04:00 [INF] Now listening on: http://localhost:5050
+2026-04-12 18:51:00.924 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-04-12 18:51:00.926 +04:00 [INF] Hosting environment: Development
+2026-04-12 18:51:00.928 +04:00 [INF] Content root path: C:\Users\User\OneDrive\Desktop\TelegramBot\src\PromptGen.Api
+2026-04-12 18:51:01.868 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5050/scalar - null null
+2026-04-12 18:51:01.918 +04:00 [WRN] Failed to determine the https port for redirect.
+2026-04-12 18:51:01.922 +04:00 [INF] Executing endpoint 'HTTP: GET /scalar/{documentName?}'
+2026-04-12 18:51:01.929 +04:00 [INF] Executing RedirectResult, redirecting to scalar/.
+2026-04-12 18:51:01.931 +04:00 [INF] Executed endpoint 'HTTP: GET /scalar/{documentName?}'
+2026-04-12 18:51:01.938 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5050/scalar - 302 null null 71.3022ms
+2026-04-12 18:51:02.072 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5050/scalar/ - null null
+2026-04-12 18:51:02.073 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5050/_framework/aspnetcore-browser-refresh.js - null null
+2026-04-12 18:51:02.093 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5050/_framework/aspnetcore-browser-refresh.js - 200 16511 application/javascript; charset=utf-8 19.103ms
+2026-04-12 18:51:02.094 +04:00 [INF] Executing endpoint 'HTTP: GET /scalar/{documentName?}'
+2026-04-12 18:51:02.263 +04:00 [INF] Write content with HTTP Response ContentType of text/html
+2026-04-12 18:51:02.277 +04:00 [INF] Executed endpoint 'HTTP: GET /scalar/{documentName?}'
+2026-04-12 18:51:02.281 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5050/scalar/ - 200 null text/html 210.0735ms
+2026-04-12 18:51:02.295 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5050/scalar/scalar.js - null null
+2026-04-12 18:51:02.298 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5050/scalar/scalar.aspnetcore.js - null null
+2026-04-12 18:51:02.298 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5050/_framework/aspnetcore-browser-refresh.js - null null
+2026-04-12 18:51:02.302 +04:00 [INF] Executing endpoint 'HTTP: GET /scalar/scalar.js'
+2026-04-12 18:51:02.304 +04:00 [INF] Executing endpoint 'HTTP: GET /scalar/scalar.aspnetcore.js'
+2026-04-12 18:51:02.306 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5050/_framework/aspnetcore-browser-refresh.js - 200 16511 application/javascript; charset=utf-8 8.0675ms
+2026-04-12 18:51:02.312 +04:00 [INF] Sending file with download name ''.
+2026-04-12 18:51:02.312 +04:00 [INF] Sending file with download name ''.
+2026-04-12 18:51:02.312 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5050/_vs/browserLink - null null
+2026-04-12 18:51:02.316 +04:00 [INF] Executed endpoint 'HTTP: GET /scalar/scalar.aspnetcore.js'
+2026-04-12 18:51:02.319 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5050/scalar/scalar.aspnetcore.js - 200 1111 text/javascript 21.7589ms
+2026-04-12 18:51:02.342 +04:00 [INF] Executed endpoint 'HTTP: GET /scalar/scalar.js'
+2026-04-12 18:51:02.348 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5050/scalar/scalar.js - 200 1128805 text/javascript 52.1964ms
+2026-04-12 18:51:02.349 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5050/_vs/browserLink - 200 null text/javascript; charset=UTF-8 36.4639ms
+2026-04-12 18:51:02.723 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5050/openapi/v1.json - null null
+2026-04-12 18:51:02.730 +04:00 [INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+2026-04-12 18:51:02.737 +04:00 [INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+2026-04-12 18:51:02.739 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5050/openapi/v1.json - 200 null application/json;charset=utf-8 15.3013ms
+2026-04-12 18:51:25.917 +04:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2026-04-12 18:51:25.955 +04:00 [INF] Bot ve API (Scalar ile) aktivdir...
+2026-04-12 18:51:26.001 +04:00 [INF] Now listening on: http://localhost:5050
+2026-04-12 18:51:26.021 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-04-12 18:51:26.022 +04:00 [INF] Hosting environment: Development
+2026-04-12 18:51:26.023 +04:00 [INF] Content root path: C:\Users\User\OneDrive\Desktop\TelegramBot\src\PromptGen.Api
+2026-04-12 18:51:26.862 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5050/scalar - null null
+2026-04-12 18:51:26.906 +04:00 [WRN] Failed to determine the https port for redirect.
+2026-04-12 18:51:26.910 +04:00 [INF] Executing endpoint 'HTTP: GET /scalar/{documentName?}'
+2026-04-12 18:51:26.914 +04:00 [INF] Executing RedirectResult, redirecting to scalar/.
+2026-04-12 18:51:26.916 +04:00 [INF] Executed endpoint 'HTTP: GET /scalar/{documentName?}'
+2026-04-12 18:51:26.920 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5050/scalar - 302 null null 61.0138ms
+2026-04-12 18:51:27.062 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5050/scalar/ - null null
+2026-04-12 18:51:27.064 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5050/_framework/aspnetcore-browser-refresh.js - null null
+2026-04-12 18:51:27.072 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5050/_framework/aspnetcore-browser-refresh.js - 200 16511 application/javascript; charset=utf-8 7.9767ms
+2026-04-12 18:51:27.074 +04:00 [INF] Executing endpoint 'HTTP: GET /scalar/{documentName?}'
+2026-04-12 18:51:27.228 +04:00 [INF] Write content with HTTP Response ContentType of text/html
+2026-04-12 18:51:27.239 +04:00 [INF] Executed endpoint 'HTTP: GET /scalar/{documentName?}'
+2026-04-12 18:51:27.243 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5050/scalar/ - 200 null text/html 180.922ms
+2026-04-12 18:51:27.253 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5050/scalar/scalar.js - null null
+2026-04-12 18:51:27.255 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5050/_framework/aspnetcore-browser-refresh.js - null null
+2026-04-12 18:51:27.255 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5050/scalar/scalar.aspnetcore.js - null null
+2026-04-12 18:51:27.261 +04:00 [INF] Executing endpoint 'HTTP: GET /scalar/scalar.js'
+2026-04-12 18:51:27.263 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5050/_framework/aspnetcore-browser-refresh.js - 200 16511 application/javascript; charset=utf-8 7.6094ms
+2026-04-12 18:51:27.270 +04:00 [INF] Executing endpoint 'HTTP: GET /scalar/scalar.aspnetcore.js'
+2026-04-12 18:51:27.278 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5050/_vs/browserLink - null null
+2026-04-12 18:51:27.278 +04:00 [INF] Sending file with download name ''.
+2026-04-12 18:51:27.280 +04:00 [INF] Sending file with download name ''.
+2026-04-12 18:51:27.287 +04:00 [INF] Executed endpoint 'HTTP: GET /scalar/scalar.aspnetcore.js'
+2026-04-12 18:51:27.290 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5050/scalar/scalar.aspnetcore.js - 200 1111 text/javascript 34.2567ms
+2026-04-12 18:51:27.315 +04:00 [INF] Executed endpoint 'HTTP: GET /scalar/scalar.js'
+2026-04-12 18:51:27.318 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5050/scalar/scalar.js - 200 1128805 text/javascript 64.7502ms
+2026-04-12 18:51:27.320 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5050/_vs/browserLink - 200 null text/javascript; charset=UTF-8 41.5773ms
+2026-04-12 18:51:27.675 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5050/openapi/v1.json - null null
+2026-04-12 18:51:27.679 +04:00 [INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+2026-04-12 18:51:27.685 +04:00 [INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+2026-04-12 18:51:27.687 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5050/openapi/v1.json - 200 null application/json;charset=utf-8 11.8973ms
+2026-04-12 18:51:29.016 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5050/_framework/aspnetcore-browser-refresh.js - null null
+2026-04-12 18:51:29.021 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5050/_framework/aspnetcore-browser-refresh.js - 200 16511 application/javascript; charset=utf-8 4.7623ms
+2026-04-12 18:55:57.934 +04:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2026-04-12 18:55:57.974 +04:00 [INF] Bot ve API (Scalar ile) aktivdir...
+2026-04-12 18:55:58.022 +04:00 [INF] Now listening on: http://localhost:5050
+2026-04-12 18:55:58.042 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-04-12 18:55:58.043 +04:00 [INF] Hosting environment: Development
+2026-04-12 18:55:58.044 +04:00 [INF] Content root path: C:\Users\User\OneDrive\Desktop\TelegramBot\src\PromptGen.Api
+2026-04-12 18:55:59.113 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5050/scalar - null null
+2026-04-12 18:55:59.160 +04:00 [WRN] Failed to determine the https port for redirect.
+2026-04-12 18:55:59.163 +04:00 [INF] Executing endpoint 'HTTP: GET /scalar/{documentName?}'
+2026-04-12 18:55:59.169 +04:00 [INF] Executing RedirectResult, redirecting to scalar/.
+2026-04-12 18:55:59.170 +04:00 [INF] Executed endpoint 'HTTP: GET /scalar/{documentName?}'
+2026-04-12 18:55:59.177 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5050/scalar - 302 null null 65.9126ms
+2026-04-12 18:55:59.304 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5050/scalar/ - null null
+2026-04-12 18:55:59.313 +04:00 [INF] Executing endpoint 'HTTP: GET /scalar/{documentName?}'
+2026-04-12 18:55:59.315 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5050/_framework/aspnetcore-browser-refresh.js - null null
+2026-04-12 18:55:59.322 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5050/_framework/aspnetcore-browser-refresh.js - 200 16511 application/javascript; charset=utf-8 7.3292ms
+2026-04-12 18:55:59.474 +04:00 [INF] Write content with HTTP Response ContentType of text/html
+2026-04-12 18:55:59.489 +04:00 [INF] Executed endpoint 'HTTP: GET /scalar/{documentName?}'
+2026-04-12 18:55:59.494 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5050/scalar/ - 200 null text/html 190.2209ms
+2026-04-12 18:55:59.506 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5050/scalar/scalar.js - null null
+2026-04-12 18:55:59.508 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5050/_framework/aspnetcore-browser-refresh.js - null null
+2026-04-12 18:55:59.508 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5050/scalar/scalar.aspnetcore.js - null null
+2026-04-12 18:55:59.512 +04:00 [INF] Executing endpoint 'HTTP: GET /scalar/scalar.js'
+2026-04-12 18:55:59.514 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5050/_framework/aspnetcore-browser-refresh.js - 200 16511 application/javascript; charset=utf-8 5.7701ms
+2026-04-12 18:55:59.518 +04:00 [INF] Executing endpoint 'HTTP: GET /scalar/scalar.aspnetcore.js'
+2026-04-12 18:55:59.522 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5050/_vs/browserLink - null null
+2026-04-12 18:55:59.523 +04:00 [INF] Sending file with download name ''.
+2026-04-12 18:55:59.523 +04:00 [INF] Sending file with download name ''.
+2026-04-12 18:55:59.530 +04:00 [INF] Executed endpoint 'HTTP: GET /scalar/scalar.aspnetcore.js'
+2026-04-12 18:55:59.534 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5050/scalar/scalar.aspnetcore.js - 200 1111 text/javascript 25.8432ms
+2026-04-12 18:55:59.556 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5050/_vs/browserLink - 200 null text/javascript; charset=UTF-8 33.8556ms
+2026-04-12 18:55:59.562 +04:00 [INF] Executed endpoint 'HTTP: GET /scalar/scalar.js'
+2026-04-12 18:55:59.566 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5050/scalar/scalar.js - 200 1128805 text/javascript 59.9026ms
+2026-04-12 18:55:59.906 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5050/openapi/v1.json - null null
+2026-04-12 18:55:59.909 +04:00 [INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+2026-04-12 18:55:59.916 +04:00 [INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+2026-04-12 18:55:59.918 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5050/openapi/v1.json - 200 null application/json;charset=utf-8 12.4661ms
+2026-04-12 19:08:04.259 +04:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2026-04-12 19:08:04.299 +04:00 [INF] Bot ve API (Scalar ile) aktivdir...
+2026-04-12 19:08:04.350 +04:00 [INF] Now listening on: http://localhost:5050
+2026-04-12 19:08:04.372 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-04-12 19:08:04.373 +04:00 [INF] Hosting environment: Development
+2026-04-12 19:08:04.374 +04:00 [INF] Content root path: C:\Users\User\OneDrive\Desktop\TelegramBot\src\PromptGen.Api
+2026-04-12 19:08:05.425 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5050/scalar - null null
+2026-04-12 19:08:05.481 +04:00 [WRN] Failed to determine the https port for redirect.
+2026-04-12 19:08:05.485 +04:00 [INF] Executing endpoint 'HTTP: GET /scalar/{documentName?}'
+2026-04-12 19:08:05.494 +04:00 [INF] Executing RedirectResult, redirecting to scalar/.
+2026-04-12 19:08:05.497 +04:00 [INF] Executed endpoint 'HTTP: GET /scalar/{documentName?}'
+2026-04-12 19:08:05.506 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5050/scalar - 302 null null 83.2704ms
+2026-04-12 19:08:05.616 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5050/scalar/ - null null
+2026-04-12 19:08:05.617 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5050/_framework/aspnetcore-browser-refresh.js - null null
+2026-04-12 19:08:05.627 +04:00 [INF] Executing endpoint 'HTTP: GET /scalar/{documentName?}'
+2026-04-12 19:08:05.627 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5050/_framework/aspnetcore-browser-refresh.js - 200 16511 application/javascript; charset=utf-8 10.5571ms
+2026-04-12 19:08:05.633 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5050/_framework/aspnetcore-browser-refresh.js - null null
+2026-04-12 19:08:05.637 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5050/_framework/aspnetcore-browser-refresh.js - 200 16511 application/javascript; charset=utf-8 4.378ms
+2026-04-12 19:08:05.803 +04:00 [INF] Write content with HTTP Response ContentType of text/html
+2026-04-12 19:08:05.820 +04:00 [INF] Executed endpoint 'HTTP: GET /scalar/{documentName?}'
+2026-04-12 19:08:05.824 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5050/scalar/ - 200 null text/html 208.945ms
+2026-04-12 19:08:05.833 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5050/scalar/scalar.js - null null
+2026-04-12 19:08:05.834 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5050/scalar/scalar.aspnetcore.js - null null
+2026-04-12 19:08:05.834 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5050/_framework/aspnetcore-browser-refresh.js - null null
+2026-04-12 19:08:05.839 +04:00 [INF] Executing endpoint 'HTTP: GET /scalar/scalar.js'
+2026-04-12 19:08:05.841 +04:00 [INF] Executing endpoint 'HTTP: GET /scalar/scalar.aspnetcore.js'
+2026-04-12 19:08:05.842 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5050/_framework/aspnetcore-browser-refresh.js - 200 16511 application/javascript; charset=utf-8 6.9889ms
+2026-04-12 19:08:05.848 +04:00 [INF] Sending file with download name ''.
+2026-04-12 19:08:05.848 +04:00 [INF] Sending file with download name ''.
+2026-04-12 19:08:05.848 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5050/_vs/browserLink - null null
+2026-04-12 19:08:05.853 +04:00 [INF] Executed endpoint 'HTTP: GET /scalar/scalar.aspnetcore.js'
+2026-04-12 19:08:05.854 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5050/scalar/scalar.aspnetcore.js - 200 1111 text/javascript 19.7739ms
+2026-04-12 19:08:05.881 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5050/_vs/browserLink - 200 null text/javascript; charset=UTF-8 33.218ms
+2026-04-12 19:08:05.885 +04:00 [INF] Executed endpoint 'HTTP: GET /scalar/scalar.js'
+2026-04-12 19:08:05.888 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5050/scalar/scalar.js - 200 1128805 text/javascript 55.1743ms
+2026-04-12 19:08:06.258 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5050/openapi/v1.json - null null
+2026-04-12 19:08:06.265 +04:00 [INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+2026-04-12 19:08:06.274 +04:00 [INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+2026-04-12 19:08:06.276 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5050/openapi/v1.json - 200 null application/json;charset=utf-8 18.528ms
+2026-04-12 19:08:54.041 +04:00 [INF] Executed DbCommand (65ms) [Parameters=[@chatId='?' (DbType = Int64)], CommandType='"Text"', CommandTimeout='30']
+SELECT u."Id", u."CreatedAt", u."DailyRequestCount", u."FirstName", u."IsPremium", u."LastName", u."LastRequestDate", u."TelegramId", u."UpdatedAt", u."UserName"
+FROM "Users" AS u
+WHERE u."TelegramId" = @chatId
+LIMIT 1
+2026-04-12 19:09:11.429 +04:00 [INF] Executed DbCommand (2ms) [Parameters=[@chatId='?' (DbType = Int64)], CommandType='"Text"', CommandTimeout='30']
+SELECT u."Id", u."CreatedAt", u."DailyRequestCount", u."FirstName", u."IsPremium", u."LastName", u."LastRequestDate", u."TelegramId", u."UpdatedAt", u."UserName"
+FROM "Users" AS u
+WHERE u."TelegramId" = @chatId
+LIMIT 1
+2026-04-12 19:09:32.350 +04:00 [INF] Executed DbCommand (3ms) [Parameters=[@chatId='?' (DbType = Int64)], CommandType='"Text"', CommandTimeout='30']
+SELECT u."Id", u."CreatedAt", u."DailyRequestCount", u."FirstName", u."IsPremium", u."LastName", u."LastRequestDate", u."TelegramId", u."UpdatedAt", u."UserName"
+FROM "Users" AS u
+WHERE u."TelegramId" = @chatId
+LIMIT 1

@@ -5,6 +5,7 @@ using PromptGen.Api.Persistence.Data;
 using Telegram.Bot;
 using Telegram.Bot.Polling;
 using Telegram.Bot.Types;
+using Telegram.Bot.Types.Enums;
 
 namespace PromptGen.Api.Concretes.Services;
 
@@ -55,7 +56,7 @@ public class BotBackgroundService(ITelegramBotClient botClient, IServiceProvider
             {
                 if (message.Text.ToLower() == "/start")
                 {
-                    await botClient.SendMessage(chatId, $"Salam {firstName}! 👋\n\nMənə bir mövzu yaz (məs: 'Meşədə qədim qala') və ya bir şəkil göndər, mən isə sənin üçün Midjourney promptu hazırlayım.", cancellationToken: cancellationToken);
+                    await botClient.SendMessage(chatId, $"Salam {firstName}! 👋\n\nMənə bir mövzu yaz və ya şəkil göndər, mən isə sənin üçün Midjourney promptu hazırlayım.", cancellationToken: cancellationToken);
                 }
                 return;
             }
@@ -64,22 +65,32 @@ public class BotBackgroundService(ITelegramBotClient botClient, IServiceProvider
             {
                 string aiResult = string.Empty;
 
-                if (message.Type == Telegram.Bot.Types.Enums.MessageType.Photo)
+                if (message.Type == MessageType.Photo)
                 {
                     await botClient.SendMessage(chatId, "📸 Şəkli analiz edirəm, bir az gözlə...", cancellationToken: cancellationToken);
 
-                    var photo = message.Photo!.Last(); 
+                    var photo = message.Photo!.Last();
                     var file = await botClient.GetFile(photo.FileId, cancellationToken);
 
                     using var ms = new MemoryStream();
                     await botClient.DownloadFile(file.FilePath!, ms, cancellationToken);
+
+                    ms.Position = 0;
                     var base64Image = Convert.ToBase64String(ms.ToArray());
 
                     aiResult = await geminiService.GeneratePromptFromImageAsync(base64Image, message.Caption);
                 }
+
                 else if (message.Text is { } messageText)
                 {
-                    await botClient.SendMessage(chatId, "🤖 Mövzu əsasında prompt hazırlayıram...", cancellationToken: cancellationToken);
+                    var lowerText = messageText.ToLower().Trim();
+                    var greetings = new List<string> { "salam", "sa", "merhaba", "hi", "hello", "necesen" };
+
+                    if (!greetings.Any(g => lowerText.Contains(g)))
+                    {
+                        await botClient.SendMessage(chatId, "🤖 Mövzu əsasında prompt hazırlayıram...", cancellationToken: cancellationToken);
+                    }
+
                     aiResult = await geminiService.GeneratePromptAsync(messageText);
                 }
 
@@ -87,22 +98,22 @@ public class BotBackgroundService(ITelegramBotClient botClient, IServiceProvider
                 {
                     await botClient.SendMessage(
                         chatId: chatId,
-                        text: $"✨ **Sənin üçün hazırladığım Prompt:**\n\n`{aiResult}`",
-                        parseMode: Telegram.Bot.Types.Enums.ParseMode.Markdown,
+                        text: aiResult, 
+                        parseMode: ParseMode.Markdown,
                         cancellationToken: cancellationToken
                     );
                 }
             }
             catch (Exception ex)
             {
-                _logger.LogError(ex, "Mesaj emalı zamanı xəta!"); 
-                await botClient.SendMessage(chatId, "⚠️ Üzr istəyirəm, Gemini AI hazırda bu sorğuya cavab verə bilmir.", cancellationToken: cancellationToken);
+                _logger.LogError(ex, "Mesaj emalı zamanı xəta!");
+                await botClient.SendMessage(chatId, "⚠️ Üzr istəyirəm, bir problem baş verdi. Yenidən yoxlayın.", cancellationToken: cancellationToken);
             }
         }
     }
     private Task HandlePollingErrorAsync(ITelegramBotClient botClient, Exception exception, CancellationToken cancellationToken)
     {
-        Console.WriteLine("Xəta baş verdi: " + exception.Message);
+        _logger.LogError(exception, "Polling xətası!");
         return Task.CompletedTask;
     }
 }
