@@ -1,8 +1,6 @@
 ﻿using Mscc.GenerativeAI;
 using Mscc.GenerativeAI.Types;
 using PromptGen.Api.Concretes.Interfaces;
-using System.Globalization;
-using System.Text.Json;
 
 namespace PromptGen.Api.Concretes.Services;
 
