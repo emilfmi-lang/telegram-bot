@@ -4,7 +4,6 @@ using PromptGen.Api.Entities.Identity;
 using PromptGen.Api.Persistence.Data;
 using Telegram.Bot;
 using Telegram.Bot.Polling;
-using Telegram.Bot.Types;
 
 namespace PromptGen.Api.Concretes.Services;
 

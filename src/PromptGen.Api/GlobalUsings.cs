@@ -6,5 +6,7 @@ global using System.Threading.Tasks;
 global using Microsoft.AspNetCore.Builder;
 global using Microsoft.AspNetCore.Hosting;
 global using Telegram.Bot.Types.Enums;
+global using Telegram.Bot.Types;
+
 
 
