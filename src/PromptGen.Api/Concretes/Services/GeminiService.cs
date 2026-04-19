@@ -1,7 +1,7 @@
 ﻿using Mscc.GenerativeAI;
 using Mscc.GenerativeAI.Types;
 using PromptGen.Api.Concretes.Interfaces;
-
+using Mscc.GenerativeAI;
 namespace PromptGen.Api.Concretes.Services;
 
 public class GeminiService : IGeminiService
