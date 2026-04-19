@@ -65,4 +65,8 @@ public class GeminiService : IGeminiService
         }
     }
 
+    public async Task<string> GeneratePromptWithHistoryAsync(long telegramId, string userInput, List<Entities.ChatMessage> history)
+    {
+        return "";
+    }
 }

@@ -23,6 +23,34 @@ namespace PromptGen.Api.Migrations
             NpgsqlModelBuilderExtensions.HasPostgresExtension(modelBuilder, "uuid-ossp");
             NpgsqlModelBuilderExtensions.UseIdentityByDefaultColumns(modelBuilder);
 
+            modelBuilder.Entity("PromptGen.Api.Entities.ChatMessage", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uuid");
+
+                    b.Property<string>("Content")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<string>("Role")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<long>("TelegramId")
+                        .HasColumnType("bigint");
+
+                    b.Property<DateTime>("UpdatedAt")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("ChatMessages");
+                });
+
             modelBuilder.Entity("PromptGen.Api.Entities.Identity.AppUser", b =>
                 {
                     b.Property<Guid>("Id")
@@ -84,13 +112,6 @@ namespace PromptGen.Api.Migrations
                         .IsRequired()
                         .HasColumnType("text");
 
-                    b.Property<string>("ModelName")
-                        .IsRequired()
-                        .ValueGeneratedOnAdd()
-                        .HasMaxLength(50)
-                        .HasColumnType("character varying(50)")
-                        .HasDefaultValue("gpt-4o-vision");
-
                     b.Property<long>("ProcessingTimeMs")
                         .HasColumnType("bigint");
 
@@ -111,7 +132,7 @@ namespace PromptGen.Api.Migrations
 
                     b.HasIndex("UserId");
 
-                    b.ToTable("PromptLogs");
+                    b.ToTable("PromptLog");
                 });
 
             modelBuilder.Entity("PromptGen.Api.Entities.PromptLog", b =>

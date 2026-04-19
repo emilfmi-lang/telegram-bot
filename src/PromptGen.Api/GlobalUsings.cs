@@ -7,6 +7,8 @@ global using System.Threading;
 global using System.Threading.Tasks;
 global using Telegram.Bot.Types;
 global using Telegram.Bot.Types.Enums;
+global using PromptGen.Api.Entities;
+
 
 
 
