@@ -12,6 +12,5 @@ public class PromptLogConfiguration : IEntityTypeConfiguration<PromptLog>
         builder.HasIndex(p => p.ImageHash);
         builder.Property(p => p.GeneratedPrompt).IsRequired();
         builder.Property(p => p.TelegramFileId).IsRequired().HasMaxLength(500);
-        builder.Property(p => p.ModelName).HasMaxLength(50).HasDefaultValue("gpt-4o-vision");
     }
 }
