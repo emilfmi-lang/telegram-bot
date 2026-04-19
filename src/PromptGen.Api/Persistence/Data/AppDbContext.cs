@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using PromptGen.Api.Entities;
 using PromptGen.Api.Entities.Identity;
 using System.Reflection;
 
@@ -8,6 +9,7 @@ public class AppDbContext : DbContext
 {
     public AppDbContext(DbContextOptions<AppDbContext> options) : base(options){}
     public DbSet<AppUser> Users { get; set; }
+    public DbSet<ChatMessage> ChatMessages { get; set; }    
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         base.OnModelCreating(modelBuilder);

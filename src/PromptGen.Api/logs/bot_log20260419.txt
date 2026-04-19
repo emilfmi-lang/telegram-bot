@@ -1,0 +1,56 @@
+2026-04-19 13:26:21.394 +04:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2026-04-19 13:26:21.441 +04:00 [INF] Bot ve API (Scalar ile) aktivdir...
+2026-04-19 13:26:21.560 +04:00 [INF] Now listening on: http://localhost:5050
+2026-04-19 13:26:21.588 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-04-19 13:26:21.591 +04:00 [INF] Hosting environment: Development
+2026-04-19 13:26:21.593 +04:00 [INF] Content root path: C:\Users\User\OneDrive\Desktop\TelegramBot\src\PromptGen.Api
+2026-04-19 13:26:22.069 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5050/scalar - null null
+2026-04-19 13:26:22.201 +04:00 [WRN] Failed to determine the https port for redirect.
+2026-04-19 13:26:22.205 +04:00 [INF] Executing endpoint 'HTTP: GET /scalar/{documentName?}'
+2026-04-19 13:26:22.219 +04:00 [INF] Executing RedirectResult, redirecting to scalar/.
+2026-04-19 13:26:22.221 +04:00 [INF] Executed endpoint 'HTTP: GET /scalar/{documentName?}'
+2026-04-19 13:26:22.234 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5050/scalar - 302 null null 166.8861ms
+2026-04-19 13:26:22.241 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5050/scalar/ - null null
+2026-04-19 13:26:22.248 +04:00 [INF] Executing endpoint 'HTTP: GET /scalar/{documentName?}'
+2026-04-19 13:26:22.455 +04:00 [INF] Write content with HTTP Response ContentType of text/html
+2026-04-19 13:26:22.475 +04:00 [INF] Executed endpoint 'HTTP: GET /scalar/{documentName?}'
+2026-04-19 13:26:22.478 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5050/scalar/scalar.js - null null
+2026-04-19 13:26:22.479 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5050/scalar/ - 200 null text/html 239.3624ms
+2026-04-19 13:26:22.481 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5050/_vs/browserLink - null null
+2026-04-19 13:26:22.481 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5050/_framework/aspnetcore-browser-refresh.js - null null
+2026-04-19 13:26:22.485 +04:00 [INF] Executing endpoint 'HTTP: GET /scalar/scalar.js'
+2026-04-19 13:26:22.487 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5050/scalar/scalar.aspnetcore.js - null null
+2026-04-19 13:26:22.495 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5050/_framework/aspnetcore-browser-refresh.js - 200 14931 application/javascript; charset=utf-8 13.2639ms
+2026-04-19 13:26:22.498 +04:00 [INF] Executing endpoint 'HTTP: GET /scalar/scalar.aspnetcore.js'
+2026-04-19 13:26:22.504 +04:00 [INF] Sending file with download name ''.
+2026-04-19 13:26:22.504 +04:00 [INF] Sending file with download name ''.
+2026-04-19 13:26:22.509 +04:00 [INF] Executed endpoint 'HTTP: GET /scalar/scalar.aspnetcore.js'
+2026-04-19 13:26:22.510 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5050/scalar/scalar.aspnetcore.js - 200 1111 text/javascript 23.2731ms
+2026-04-19 13:26:22.544 +04:00 [INF] Executed endpoint 'HTTP: GET /scalar/scalar.js'
+2026-04-19 13:26:22.547 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5050/scalar/scalar.js - 200 1128805 text/javascript 68.8047ms
+2026-04-19 13:26:22.576 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5050/_vs/browserLink - 200 null text/javascript; charset=UTF-8 94.4947ms
+2026-04-19 13:26:22.897 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5050/openapi/v1.json - null null
+2026-04-19 13:26:22.902 +04:00 [INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+2026-04-19 13:26:22.913 +04:00 [INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+2026-04-19 13:26:22.915 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5050/openapi/v1.json - 200 null application/json;charset=utf-8 18.2284ms
+2026-04-19 13:26:23.762 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5050/scalar/favicon.svg - null null
+2026-04-19 13:26:23.767 +04:00 [INF] Executing endpoint 'HTTP: GET /scalar/favicon.svg'
+2026-04-19 13:26:23.768 +04:00 [INF] Sending file with download name ''.
+2026-04-19 13:26:23.771 +04:00 [INF] Executed endpoint 'HTTP: GET /scalar/favicon.svg'
+2026-04-19 13:26:23.773 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5050/scalar/favicon.svg - 200 533 image/svg+xml 11.2687ms
+2026-04-19 13:26:59.184 +04:00 [INF] Executed DbCommand (83ms) [Parameters=[@chatId='?' (DbType = Int64)], CommandType='"Text"', CommandTimeout='30']
+SELECT u."Id", u."CreatedAt", u."DailyRequestCount", u."FirstName", u."IsPremium", u."LastName", u."LastRequestDate", u."TelegramId", u."UpdatedAt", u."UserName"
+FROM "Users" AS u
+WHERE u."TelegramId" = @chatId
+LIMIT 1
+2026-04-19 13:27:42.794 +04:00 [INF] Executed DbCommand (2ms) [Parameters=[@chatId='?' (DbType = Int64)], CommandType='"Text"', CommandTimeout='30']
+SELECT u."Id", u."CreatedAt", u."DailyRequestCount", u."FirstName", u."IsPremium", u."LastName", u."LastRequestDate", u."TelegramId", u."UpdatedAt", u."UserName"
+FROM "Users" AS u
+WHERE u."TelegramId" = @chatId
+LIMIT 1
+2026-04-19 13:50:05.489 +04:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2026-04-19 13:50:05.530 +04:00 [INF] Bot ve API (Scalar ile) aktivdir...
+2026-04-19 13:50:05.615 +04:00 [INF] Now listening on: http://localhost:5050
+2026-04-19 13:50:05.639 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-04-19 13:50:05.641 +04:00 [INF] Hosting environment: Development
+2026-04-19 13:50:05.642 +04:00 [INF] Content root path: C:\Users\User\OneDrive\Desktop\TelegramBot\src\PromptGen.Api
