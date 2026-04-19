@@ -38,7 +38,7 @@ public class GeminiService : IGeminiService
     {
         try
         {
-            var googleAi = new GoogleAI(_apiKey);
+            GoogleAI googleAi = new(_apiKey);
             var model = googleAi.GenerativeModel(Model.Gemini25Flash);
 
             var promptText = userPrompt ?? "Bu şəkli analiz et və Midjourney üçün ingilis dilində bədii prompt hazırla.";
