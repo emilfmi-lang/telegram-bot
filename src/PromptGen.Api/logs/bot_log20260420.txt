@@ -1,0 +1,6 @@
+2026-04-20 21:22:21.499 +04:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2026-04-20 21:22:21.537 +04:00 [INF] Bot ve API (Scalar ile) aktivdir...
+2026-04-20 21:22:21.586 +04:00 [INF] Now listening on: http://localhost:5050
+2026-04-20 21:22:21.589 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-04-20 21:22:21.591 +04:00 [INF] Hosting environment: Development
+2026-04-20 21:22:21.592 +04:00 [INF] Content root path: C:\Users\User\OneDrive\Desktop\TelegramBot\src\PromptGen.Api

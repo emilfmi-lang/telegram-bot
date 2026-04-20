@@ -1,14 +1,13 @@
 ﻿using Mscc.GenerativeAI;
 using Mscc.GenerativeAI.Types;
 using PromptGen.Api.Concretes.Interfaces;
-using Mscc.GenerativeAI;
 namespace PromptGen.Api.Concretes.Services;
 
 public class GeminiService : IGeminiService
 {
     private readonly string _apiKey;
     private readonly ILogger<GeminiService> _logger;
-    public GeminiService(IConfiguration configuration , ILogger<GeminiService> logger)
+    public GeminiService(IConfiguration configuration, ILogger<GeminiService> logger)
     {
         _apiKey = configuration["GeminiConfiguration:ApiKey"] ?? throw new Exception("API Key tapılmadı!");
         _logger = logger;
@@ -34,6 +33,7 @@ public class GeminiService : IGeminiService
             return "Bağlantı xətası yaşandı. Bir az sonra yenidən yoxlayın.";
         }
     }
+        
     public async Task<string> GeneratePromptFromImageAsync(string base64Image, string? userPrompt = null)
     {
         try
@@ -67,6 +67,40 @@ public class GeminiService : IGeminiService
 
     public async Task<string> GeneratePromptWithHistoryAsync(long telegramId, string userInput, List<Entities.ChatMessage> history)
     {
-        return "";
+        //try
+        //{
+        //    var googleAi = new GoogleAI(_apiKey);
+        //    var model = googleAi.GenerativeModel(Model.Gemini25Flash);
+
+        //    string systemInstruction =
+        //       "Sən peşəkar Midjourney mütəxəssisisən. Səmimi Azərbaycan dilində cavab ver. " +
+        //    "İstifadəçinin tarixçəsini nəzərə alaraq promptları təkmilləşdir.";
+
+        //    var chatHistory = history.Select(h => new Content
+        //    {
+        //        Role = h.Role.ToLower() == "user" ? "user" : "model",
+        //        Parts = new List<Part>
+        //    {
+        //        new Part { Text = h.Content }
+        //    }
+        //    }).ToList();
+
+        //    var chat = model.StartChat(new ChatSessionOptions
+        //    {
+        //        History = chatHistory
+        //    });
+
+        //    var response = await chat.SendMessage($"{systemInstruction}\n\nİstifadəçi: {userInput}");
+
+        //    return response.Text?.Trim() ?? "AI cavab verə bilmədi.";
+        //}
+        //catch (Exception ex)
+        //{
+        //    _logger.LogError(ex, "History ilə AI sorğusu zamanı xəta! TelegramId: {TelegramId}", telegramId);
+        //    return "Bağlantı xətası yaşandı. Zəhmət olmasa bir az sonra yenidən yoxlayın.";
+        //}
+        return ""; 
     }
 }
+
+    
