@@ -8,10 +8,7 @@ public class BotBackgroundService(ITelegramBotClient botClient, IServiceProvider
 
     protected override async Task ExecuteAsync(CancellationToken stoppingToken)
     {
-        var receiverOptions = new ReceiverOptions
-        {
-            AllowedUpdates = []
-        };
+        var receiverOptions = new ReceiverOptions { AllowedUpdates = [] };
 
         _botClient.StartReceiving(
              updateHandler: HandleUpdateAsync,
@@ -59,16 +56,12 @@ public class BotBackgroundService(ITelegramBotClient botClient, IServiceProvider
                 if (message.Type == MessageType.Photo)
                 {
                     await botClient.SendMessage(chatId, "📸 Şəkli analiz edirəm, bir az gözlə...", cancellationToken: cancellationToken);
-
                     var photo = message.Photo!.Last();
                     var file = await botClient.GetFile(photo.FileId, cancellationToken);
-
                     using var ms = new MemoryStream();
                     await botClient.DownloadFile(file.FilePath!, ms, cancellationToken);
-
                     ms.Position = 0;
                     var base64Image = Convert.ToBase64String(ms.ToArray());
-
                     aiResult = await geminiService.GeneratePromptFromImageAsync(base64Image, message.Caption);
                 }
 
@@ -82,23 +75,37 @@ public class BotBackgroundService(ITelegramBotClient botClient, IServiceProvider
                         await botClient.SendMessage(chatId, "🤖 Mövzu əsasında prompt hazırlayıram...", cancellationToken: cancellationToken);
                     }
 
-                    aiResult = await geminiService.GeneratePromptAsync(messageText);
+                    var history = await dbContext.ChatMessages
+                        .Where(m => m.TelegramId == chatId)
+                        .OrderByDescending(m => m.CreatedAt)
+                        .Take(6)
+                        .OrderBy(m => m.CreatedAt)
+                        .ToListAsync(cancellationToken);
+
+                    aiResult = await geminiService.GeneratePromptWithHistoryAsync(chatId, messageText, history);
+
+                    dbContext.ChatMessages.Add(new ChatMessage { TelegramId = chatId, Role = "user", Content = messageText });
+                    dbContext.ChatMessages.Add(new ChatMessage { TelegramId = chatId, Role = "model", Content = aiResult });
+
+                    await dbContext.SaveChangesAsync(cancellationToken);
+
+                    if (!string.IsNullOrEmpty(aiResult))
+                    {
+                        await botClient.SendMessage(
+                            chatId: chatId,
+                            text: aiResult,
+                            parseMode: ParseMode.Markdown,
+                            cancellationToken: cancellationToken
+                        );
+                    }
+
                 }
 
-                if (!string.IsNullOrEmpty(aiResult))
-                {
-                    await botClient.SendMessage(
-                        chatId: chatId,
-                        text: aiResult, 
-                        parseMode: ParseMode.Markdown,
-                        cancellationToken: cancellationToken
-                    );
-                }
             }
             catch (Exception ex)
             {
                 _logger.LogError(ex, "Mesaj emalı zamanı xəta!");
-                await botClient.SendMessage(chatId, "⚠️ Üzr istəyirəm, bir problem baş verdi. Yenidən yoxlayın.", cancellationToken: cancellationToken);
+                await botClient.SendMessage(chatId, "⚠️ Gemini AI hazırda cavab verə bilmir.", cancellationToken: cancellationToken);
             }
         }
     }

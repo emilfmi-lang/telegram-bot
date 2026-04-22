@@ -1,4 +1,4 @@
-﻿
+﻿global using Microsoft.EntityFrameworkCore;
 global using PromptGen.Api.Concretes.Interfaces;
 global using PromptGen.Api.Entities.Identity;
 global using PromptGen.Api.Persistence.Data;
