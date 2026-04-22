@@ -1,10 +1,9 @@
-﻿global using Microsoft.AspNetCore.Builder;
-global using Microsoft.AspNetCore.Hosting;
-global using System;
-global using System.Collections.Generic;
-global using System.Linq;
-global using System.Threading;
-global using System.Threading.Tasks;
+﻿
+global using PromptGen.Api.Concretes.Interfaces;
+global using PromptGen.Api.Entities.Identity;
+global using PromptGen.Api.Persistence.Data;
+global using Telegram.Bot;
+global using Telegram.Bot.Polling;
 global using Telegram.Bot.Types;
 global using Telegram.Bot.Types.Enums;
 global using PromptGen.Api.Entities;

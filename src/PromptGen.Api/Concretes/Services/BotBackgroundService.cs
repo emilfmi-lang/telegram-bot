@@ -1,11 +1,4 @@
-﻿
-using PromptGen.Api.Concretes.Interfaces;
-using PromptGen.Api.Entities.Identity;
-using PromptGen.Api.Persistence.Data;
-using Telegram.Bot;
-using Telegram.Bot.Polling;
-
-namespace PromptGen.Api.Concretes.Services;
+﻿namespace PromptGen.Api.Concretes.Services;
 
 public class BotBackgroundService(ITelegramBotClient botClient, IServiceProvider serviceProvider) : BackgroundService
 {
