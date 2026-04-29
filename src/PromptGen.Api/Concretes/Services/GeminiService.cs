@@ -1,6 +1,6 @@
-﻿using Mscc.GenerativeAI;
-using Mscc.GenerativeAI.Types;
-using PromptGen.Api.Concretes.Interfaces;
+﻿
+using System.Runtime.InteropServices;
+
 namespace PromptGen.Api.Concretes.Services;
 
 public class GeminiService : IGeminiService
@@ -89,6 +89,8 @@ public class GeminiService : IGeminiService
             return "Bağlantı xətası yaşandı. Zəhmət olmasa bir az sonra yenidən yoxlayın.";
         }
     }
+
+
 }
 
     

@@ -84,8 +84,8 @@ public class BotBackgroundService(ITelegramBotClient botClient, IServiceProvider
 
                     aiResult = await geminiService.GeneratePromptWithHistoryAsync(chatId, messageText, history);
 
-                    dbContext.ChatMessages.Add(new ChatMessage { TelegramId = chatId, Role = "user", Content = messageText });
-                    dbContext.ChatMessages.Add(new ChatMessage { TelegramId = chatId, Role = "model", Content = aiResult });
+                    dbContext.ChatMessages.Add(new PromptGen.Api.Entities.ChatMessage { TelegramId = chatId, Role = "user", Content = messageText });
+                    dbContext.ChatMessages.Add(new PromptGen.Api.Entities.ChatMessage { TelegramId = chatId, Role = "model", Content = aiResult });
 
                     await dbContext.SaveChangesAsync(cancellationToken);
 
